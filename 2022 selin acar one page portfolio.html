@@ -1,0 +1,111 @@
+<html>
+
+<head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav id="navbar">
+	<ul>
+		<li><a href="#"><h1>Selin Acar</h1></a></li>
+		<li><a href="#about">About</a></li>
+		<li><a href="#skillstools">Skills & Tools</a></li>
+		<li><a href="#projects">Things I've Worked On</a></li>
+		<li><a href="#chat">Let's Chat</a></li>
+		<li>&#10024;</li>
+	<ul>
+</nav>
+
+<img src="selin in sintra.jpeg" alt="Selin Acar in Sintra, Portugal"/>
+
+<div id="about">
+	<p>Hi I'm Selin! I'm a user experience designer based in Toronto. A software engineering grad (BESc Western University '17, Canada), I've been working as a tech consultant at Avanade (an Accenture + Microsoft venture) since 2017. Gas/utilities, oil, crown corporations, telecommunications, food, spirituality, banking, and transportation - I've worked in a variety of industries under various roles (all related to user experience design and web/iOS development). </p>
+	<p>Outside of work, I travel, play board games, discover skincare products, and I have a small business <a href="https://www.sende.ca">(www.sende.ca)</a> with one of my oldest friends. As for food: tacos, Korean, Thai, and dried Turkish apricots with Indian cashews are my top picks, and I feel like I'm the only one who loves mind over matcha!</p>
+</div>
+
+<div id="skillstools">
+	<div class="block">
+	<h3 class="inline">Skills</h3>
+	<p class="inline">&sdot; Annotations for Developers &sdot; Design Thinking &sdot; Flow Diagrams &sdot; Information &sdot; Architecture &sdot; Personas &sdot; Prototyping &sdot; Storyboarding &sdot; Style Guides &sdot; Wireframes &sdot; Swift &sdot; HTML &sdot; CSS &sdot; Problem Solving &sdot; Logical Thinking &sdot; Technical Writing &sdot; UML Documentation</p>
+	</div>
+	<div class="block">
+	<h3 class="inline">Tools</h3>
+	<p class="inline">&sdot; Adobe XD&sdot; Figma &sdot; Sketch &sdot; Balsamiq &sdot; Invision &sdot; Mural &sdot; Otter&sdot; Asana &sdot; Git &sdot; Xcode</p>
+	</div>
+</div>
+
+<div id="projects">
+	<h2>Things I've worked on </h2>
+	<p>NOTE: Everything I've worked on is under NDA and only some things I can share if it's live to the public.</p>
+
+	<a href=""><article class="project-highlight">
+		<h3><span class="mark mark-purple">How might we design an experience where users can set up their own home internet and cable?</span></h3>
+		<p><em>as a Service designer @ a Telecommunications Company</em><p>
+	</article></a>
+
+	<a href=""><article class="project-highlight">
+		<h3><span class="mark mark-yellow">How might we tackle a digital transformation?</span></h3>
+		<p><em>as a user experience designer @ a Gas/Utilities Company</em><p>
+	</article></a>
+
+	<a href=""><article class="project-highlight">
+		<h3><span class="mark mark-green">How might we bring manual experiences to the digital world?</span></h3>
+		<p><em>as a user experience designer @ a top five Canadian Bank</em><p>
+	</article></a>
+
+	<div class="other-projects">
+	<h3>Other Projects</h3>
+<p>Digital Appointment Booking @Top Five Canadian Bank <em>//Designing the various flows for booking appointments</em></p>
+<p>Digital Transformation @Crown Corporation <em>//Creating the sass for a design system</em></p>
+<p>iOS App @Spiritual Organization <em>//Getting an app up and running quick</em></p>
+<p>iOS Banking App @Top 5 Canadian Bank Subsidiary <em>//Maintaining and updating features on the current (at the time) app</em></p>
+<p>Pipeline Overhaul @Crown Corporation <em>//On a team that was creating software deployment pipelines throughout the organization, I created documents and videos for the client to help them understand the changes, and utilize the pipelines</em></p>
+<p>Digital Transformation @Gas/Utilities Company <em>//Content and Design Management pre-release and leading remote teams</em></p>
+<p>Digital Transformation @Gas/Utilities Company <em>//Creating the sass based off of style guides, and working with remote teams</em></p>
+<p>Digital Transformation for @Saputo (Liddel's + Devondale) <em>//Creating the front-end for a site core website</em></p>
+<p>Presto Website Features @Metrolinx <em>//Turning Designs into Angular Components</em></p>
+<p>SEO Analysis @Oil/gas company <em>//Researching and creating an SEO strategy</em></p>
+<p>Neck Therapy Simulation Project @Western University Engineering+Physiotherapy <em>// Creating a VR game on the oculus rift for neck rehabilitation (earned most innovative capstone project at Western University in 2017)</em></p>
+<p>Print Material @Lighting Essentials <em>//Assisted with in-store signage, business print and starting their Shopify store</em></p>
+<p>Website & Google Reviews @London Prestige <em>//Helping out my family's business</em></p>
+<p><em>...and more ~</em></p>
+
+	</div>
+
+</div>
+
+<div id="chat">
+	<h2>Let's Chat...</h2>
+	<ul class="indent">
+		<li><a href="https://ca.linkedin.com/in/selinacar">on Linkedin</a></li>
+		<li><a href="mailto:selindenise@gmail.com">by email</a></li>
+	</ul>
+</div>
+
+<img src="Selin and mom in Turkey.jpeg" alt="Selin Acar and her mom by a lake in Turkey"/>
+
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+if (window.screen.width >= 600) {
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-290px";
+  }
+}
+  prevScrollpos = currentScrollPos;
+}
+</script>
+
+</body>
+
+</html>
