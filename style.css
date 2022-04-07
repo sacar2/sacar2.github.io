@@ -1,17 +1,18 @@
 html{
 	font-family: 'Cormorant Garamond', serif;
-	padding: 1rem 2rem 2rem;
+	padding: 1rem 1rem 2rem;
 	max-width: 800px;
 	margin: auto;
+    font-size: 24px;
 }
 
 nav{
-background: rgba(255, 255, 255, 0.9);
-padding: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
 }
 
 ul{
-padding: 0;
+    padding: 0;
 }
 
 ul li{
@@ -20,84 +21,89 @@ ul li{
 }
 
 a {
-color: black;
+    color: black;
 }
 
-Nav a, #projects a{
+nav a, #projects a{
 	text-decoration: none;
 }
 a:hover, #projects a:hover{
 	text-decoration: underline;
 }
 a:visited{
-color: black;
+    color: black;
 }
 
 article{
-Padding: 1rem 2rem;
+    padding: 1rem 2rem;
 }
 .indent{
-Margin-left: 2rem;
+    margin-left: 2rem;
 }
 
 .block{
-Display:block;
-Margin-bottom: 1rem;
+    display:block;
+    margin-bottom: 1rem;
 }
 .inline{
-Display: inline;
+    display: inline;
 }
 
 mark{
-background-color: clear;
+    background-color: clear;
 }
 
 .mark{
-background: linear-gradient(180deg, #fff 60%, #FFD0AE 40%);
+    background: linear-gradient(180deg, #fff 60%, #FFD0AE 40%);
 }
 
 .mark-purple{
-background: linear-gradient(180deg, #fff 60%, rgba(160,70,189, 0.7) 40%);
+    background: linear-gradient(180deg, #fff 60%, rgba(160,70,189, 0.7) 40%);
 }
 .mark-yellow{
-background: linear-gradient(180deg, #fff 60%, rgba(246,178,29, 0.7) 40%);
+    background: linear-gradient(180deg, #fff 60%, rgba(246,178,29, 0.7) 40%);
 }
 .mark-green{
-background: linear-gradient(180deg, #fff 60%, rgba(81,176,67, 0.7) 40%);
+    background: linear-gradient(180deg, #fff 60%, rgba(81,176,67, 0.7) 40%);
 }
 
 #skillstools, #projects, #chat{
-margin-top: 6rem;
+    margin-top: 6rem;
 }
 
 .other-projects{
-padding-left: 1rem;
+    padding-left: 1rem;
 }
 
 .other-projects p{
-font-weight: bold;
+    font-weight: bold;
 }
 .other-projects p em{
-font-weight: normal;
+    font-weight: normal;
 }
 
 img{
-Max-width:85vw;
+    width: 100%;
 }
 
 @media only screen and (min-width: 600px) {
-
+    
+    html{
+        padding: 1rem 2rem 2rem;
+        font-size: 16px;
+    }
+    
 	#navbar {
-  position: fixed; /* Make it stick/fixed */
-  top: 0; /* Stay on top */
-  left: 1rem;
-  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+        position: fixed;
+        top: 0; /* Stay on top */
+        left: 1rem;
+        transition: top 0.3s; /* Transition effect when sliding down (and up) */
 	}
-
+    
 }
 
 @media only screen and (min-width: 800px) {
 	img{
-	max-width:800px;
+        max-width:800px;
 	}
 }
