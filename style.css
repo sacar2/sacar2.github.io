@@ -10,6 +10,14 @@ p{
     line-height: 1.6rem;
 }
 
+
+.project-highlight h3{
+margin-top: 0;
+}
+.project-highlight img{
+    padding-bottom: 0.5rem;
+}
+
 nav{
     background: rgba(255, 255, 255, 0.9);
     padding: 0 1rem;
@@ -80,7 +88,7 @@ mark{
 }
 
 .mark-purple{
-    background: linear-gradient(180deg, #fff 60%, rgba(160,70,189, 0.7) 40%);
+    background: linear-gradient(180deg, #fff 60%, rgba(195,150,209, 0.7) 40%);
 }
 .mark-yellow{
     background: linear-gradient(180deg, #fff 60%, rgba(246,178,29, 0.7) 40%);
@@ -109,6 +117,11 @@ img{
     padding-bottom: 1.3rem;
 }
 
+.highlight-photo{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
 
 /*project details*/
 .role{
