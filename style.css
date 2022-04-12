@@ -145,6 +145,15 @@ small{
     max-height:40vh;
     object-fit: cover;
 }
+
+.right{
+    float: right;
+}
+
+.lighter{
+    color: light-grey;
+    font-size: 0.7rem;
+}
 /*END project details*/
 @media only screen and (min-width: 600px) {
     
