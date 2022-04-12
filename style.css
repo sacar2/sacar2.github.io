@@ -106,6 +106,13 @@ img{
 }
 
 /*project details*/
+
+dt{
+    font-size: 0.8rem;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
 .role{
     display: block;
     margin: 0;
@@ -178,9 +185,6 @@ small{
     }
 
     dt{
-        font-size: 0.8rem;
-        font-variant: small-caps;
-        font-weight: bold;
         grid-column-start: 1;
     }
 
