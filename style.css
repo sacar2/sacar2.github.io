@@ -4,6 +4,8 @@ html{
 	max-width: 800px;
 	margin: auto;
     font-size: 24px;
+/*    background: black;*/
+/*    color: white;*/
 }
 
 p{
@@ -105,6 +107,17 @@ img{
     object-fit: cover;
 }
 
+.brand-images{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.brand-images img{
+    height: 120px;
+    padding: 1rem;
+    object-fit: contain;
+    box-sizing: border-box;
+}
 /*project details*/
 
 dt{
@@ -168,7 +181,7 @@ small{
         position: fixed;
         top: 0; /* Stay on top */
         left: 1rem;
-        transition: top 0.3s; /* Transition effect when sliding down (and up) */
+        transition: top 1s; /* Transition effect when sliding down (and up) */
 	}
     
 }
@@ -177,6 +190,11 @@ small{
 	img{
         max-width:800px;
 	}
+    
+    .brand-images{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
     
     
     dl{
