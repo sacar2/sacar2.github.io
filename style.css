@@ -5,8 +5,13 @@ html{
 	margin: auto;
     font-size: 24px;
     letter-spacing: .01rem;
+    word-break: break-all;
 /*    background: black;*/
 /*    color: white;*/
+}
+
+h1, h2, h3{
+    font-weight: lighter;
 }
 
 h2{
@@ -184,6 +189,47 @@ small{
     font-size: 0.7rem;
 }
 /*END project details*/
+
+.design-process>div{
+    position: relative;
+}
+.design-process img{
+    margin:0;
+    padding:0;
+    content: url("process-mobile.svg");
+}
+
+.design-process .text{
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size:1.2rem;
+}
+
+.design-process .no{
+    opacity: 0.3;
+    filter: grayscale(100%);
+}
+
+.design-process .no .text{
+    font-size:1rem;
+}
+
+.discover {
+
+}
+.define {
+    transform: rotate(180deg);
+}
+.design {
+}
+.develop {
+    transform: rotate(180deg);
+}
+
+
 @media only screen and (min-width: 600px) {
     
     html{
@@ -197,7 +243,24 @@ small{
         left: 1rem;
         transition: top 1s; /* Transition effect when sliding down (and up) */
 	}
+    .design-process .text{
+        text-align: center;
+        position: absolute;
+        top: 40%;
+        left: 35%;
+        font-weight: bold;
+        font-variant: small-caps;
+        font-size:1.2rem;
+    }
     
+    .design-process{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+    }
+    .design-process img{
+        content: url("process.svg");
+    }
+
 }
 
 @media only screen and (min-width: 800px) {
