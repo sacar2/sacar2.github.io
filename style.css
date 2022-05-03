@@ -96,16 +96,18 @@ article h3::before{
     color: white;
     background-color: darkkhaki;
     padding: 50px;
-    border-radius: 40px;
     position: relative;
     box-shadow: 20px 20px whitesmoke;
     font-size: 1rem;
     width: 50%;
     margin: 0;
+    border: 1px black solid;
+    border-right: 3px black solid;
+    border-bottom: 2px black solid;
 }
 
 .chat-links p:nth-child(1){
-    background-color: tan;
+    background-color: white;
 }
 
 .chat-links p:nth-child(2){
@@ -120,12 +122,26 @@ article h3::before{
   }
 
 .chat-links p:nth-child(1):before {
-    border-top: 10px solid tan;
-    border-right: 10px solid tan;
+    border-top: 10px solid white;
+    border-right: 10px solid white;
     border-bottom: 10px solid transparent;
     border-left: 10px solid transparent;
     left: -20px;
     top: 40px;
+}
+
+.chat-links p:nth-child(1):after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-top: 11px solid black;
+    border-right: 10px solid black;
+    border-bottom: 10px solid transparent;
+    border-left: 11px solid transparent;
+    left: -22px;
+    top: 39px;
+    z-index: -5;
 }
 
 .chat-links p:nth-child(2):before {
@@ -135,6 +151,7 @@ article h3::before{
     border-left: 10px solid darkkhaki;
     right: -19px;
     top: 80px;
+    box-shadow: 0 1px black;
 }
 
 .chat-links p:nth-child(2):after {
