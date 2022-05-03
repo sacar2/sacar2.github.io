@@ -80,6 +80,107 @@ article h3::before{
     margin-left: 2rem;
 }
 
+.chat-links{
+    margin: 0;
+    display: grid;
+    place-items: center;
+    grid-template-columns:100%;
+    column-gap: 20px;
+}
+
+.chat-links p {
+    transform: translatey(0px);
+    animation: float 10s ease-in-out infinite;
+    mix-blend-mode: multiply;
+    text-align: center;
+    color: white;
+    background-color: darkkhaki;
+    padding: 50px;
+    border-radius: 40px;
+    position: relative;
+    box-shadow: 20px 20px whitesmoke;
+    font-size: 1rem;
+    width: 50%;
+    margin: 0;
+}
+
+.chat-links p:nth-child(1){
+    background-color: tan;
+}
+
+.chat-links p:nth-child(2){
+    top: 40px;
+}
+
+.chat-links p:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+  }
+
+.chat-links p:nth-child(1):before {
+    border-top: 10px solid tan;
+    border-right: 10px solid tan;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    left: -20px;
+    top: 40px;
+}
+
+.chat-links p:nth-child(2):before {
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid darkkhaki;
+    border-left: 10px solid darkkhaki;
+    right: -19px;
+    top: 80px;
+}
+
+.chat-links p:nth-child(2):after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid whitesmoke;
+    border-left: 10px solid whitesmoke;
+    right: -40px;
+    top: 90px;
+    z-index: -5;
+}
+
+.chat-links p:hover {
+    background-color: lightgoldenrodyellow;
+}
+.chat-links p:nth-child(1):hover:before {
+    border-top: 10px solid lightgoldenrodyellow;
+    border-right: 10px solid lightgoldenrodyellow;
+}
+
+.chat-links p:nth-child(2):hover:before {
+    border-bottom: 10px solid lightgoldenrodyellow;
+    border-left: 10px solid lightgoldenrodyellow;
+}
+
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+.topmargin4{
+    margin-top: 4rem;
+}
+
 article:hover{
     border: black 0.5px solid;
     border-top: black 2px solid;
@@ -290,6 +391,15 @@ small{
     
     .other-projects{
         padding-left: 1rem;
+    }
+
+    .chat-links{
+        grid-template-columns: 50% 50%;
+    }
+    
+    .chat-links p {
+        font-size: 1.5rem;
+        margin: 1rem 0;
     }
 
 }
