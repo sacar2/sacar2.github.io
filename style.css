@@ -1,6 +1,6 @@
 html{
 	font-family: 'Cormorant Garamond', serif;
-	padding: 1rem 1rem 2rem;
+	padding: 1rem 0.5rem 2rem;
 	max-width: 800px;
 	margin: auto;
     font-size: 24px;
@@ -15,9 +15,9 @@ h1, h2, h3{
 }
 
 h2{
-    font-size: 4rem;
-    line-height: 3.5rem;
-    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    margin: 0 0 1rem;
 }
 
 p{
@@ -62,9 +62,40 @@ a:visited{
 
 article{
     padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    border: black 0.5px solid;
+    border-right: black 2px solid;
+    border-bottom: darkslategray 3px solid;
+    transition: 0.3s;
 }
+
+article h3::before{
+    content: "case study";
+    display: block;
+    font-size: .8rem;
+    font-variant: small-caps;
+}
+
 .indent{
     margin-left: 2rem;
+}
+
+article:hover{
+    border: black 0.5px solid;
+    border-top: black 2px solid;
+    border-left: darkslategray 3px solid;
+}
+
+article.green:hover, article.green:active, article.green:focus{
+    background: honeydew;
+}
+
+article.purple:hover, article.purple:active, article.purple:focus{
+    background: lavender;
+}
+
+article.yellow:hover, article.yellow:active, article.yellow:focus{
+    background: gold;
 }
 
 .block{
@@ -102,10 +133,6 @@ mark{
 
 #skillstools, #projects, #chat{
     margin-top: 6rem;
-}
-
-.other-projects{
-    padding-left: 1rem;
 }
 
 .other-projects p{
@@ -260,7 +287,19 @@ small{
     .design-process img{
         content: url("process.svg");
     }
+    
+    .other-projects{
+        padding-left: 1rem;
+    }
 
+}
+
+@media only screen and (min-width: 700px) {
+    h2{
+        font-size: 4rem;
+        line-height: 3.5rem;
+        margin-bottom: 1rem;
+    }
 }
 
 @media only screen and (min-width: 800px) {
