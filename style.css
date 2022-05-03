@@ -66,7 +66,8 @@ article{
     border: black 0.5px solid;
     border-right: black 2px solid;
     border-bottom: darkslategray 3px solid;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
+    box-shadow: 20px 20px whitesmoke;
 }
 
 article h3::before{
@@ -169,16 +170,15 @@ article h3::before{
 }
 
 .chat-links p:hover {
-    background-color: lightgoldenrodyellow;
-}
-.chat-links p:nth-child(1):hover:before {
-    border-top: 10px solid lightgoldenrodyellow;
-    border-right: 10px solid lightgoldenrodyellow;
+    box-shadow: 20px 20px black;
 }
 
-.chat-links p:nth-child(2):hover:before {
-    border-bottom: 10px solid lightgoldenrodyellow;
-    border-left: 10px solid lightgoldenrodyellow;
+.chat-links p:nth-child(2):hover:after {
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
+    border-left: 10px solid black;
+    
 }
 
 
@@ -197,23 +197,26 @@ article h3::before{
 .topmargin4{
     margin-top: 4rem;
 }
-
 article:hover{
-    border: black 0.5px solid;
-    border-top: black 2px solid;
-    border-left: darkslategray 3px solid;
+    margin-top:-3px;
+    margin-left:-3px;
 }
 
 article.green:hover, article.green:active, article.green:focus{
-    background: honeydew;
+/*    background: honeydew;*/
+    box-shadow: 20px 20px honeydew;
+
 }
 
 article.purple:hover, article.purple:active, article.purple:focus{
-    background: lavender;
+/*    background: lavender;*/
+    box-shadow: 20px 20px lavender;
 }
 
 article.yellow:hover, article.yellow:active, article.yellow:focus{
-    background: LightGoldenRodYellow;
+/*    background: LightGoldenRodYellow;*/
+    box-shadow: 20px 20px lightgoldenrodyellow;
+
 }
 
 .block{
