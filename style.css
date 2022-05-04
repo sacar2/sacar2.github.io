@@ -101,7 +101,7 @@ article h3::before{
     mix-blend-mode: multiply;
     text-align: center;
     color: white;
-    background-color: darkkhaki;
+    background-color: #E6EFDA;
     padding: 50px;
     position: relative;
     box-shadow: 20px 20px whitesmoke;
@@ -154,8 +154,8 @@ article h3::before{
 .chat-links p:nth-child(2):before {
     border-top: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 10px solid darkkhaki;
-    border-left: 10px solid darkkhaki;
+    border-bottom: 10px solid #E6EFDA;
+    border-left: 10px solid #E6EFDA;
     right: -19px;
     top: 80px;
     box-shadow: 0 1px black;
@@ -263,7 +263,7 @@ mark{
 }
 
 .other-projects p{
-    font-weight: bold;
+    font-family: 'Cormorant Garamond Bold';
 }
 .other-projects p em{
     font-weight: normal;
@@ -296,7 +296,7 @@ img{
 dt{
     font-size: 0.8rem;
     font-variant: small-caps;
-    font-weight: bold;
+    font-family: 'Cormorant Garamond Bold';
 }
 
 .role{
@@ -304,6 +304,13 @@ dt{
     margin: 0;
     font-style: italic;
 }
+
+.description{
+    border: 1px solid black;
+    padding: 1rem;
+    box-shadow: 10px 10px whitesmoke;
+}
+
 .role:before{
     content: "as a ";
 }
@@ -357,7 +364,7 @@ small{
     text-align: center;
     position: absolute;
     top: 40%;
-    font-weight: bold;
+    font-family: 'Cormorant Garamond Bold';
     font-variant: small-caps;
     font-size:1.2rem;
 }
@@ -402,7 +409,7 @@ small{
         position: absolute;
         top: 40%;
         left: 35%;
-        font-weight: bold;
+        font-family: 'Cormorant Garamond Bold';
         font-variant: small-caps;
         font-size:1.2rem;
     }
@@ -440,6 +447,11 @@ small{
         line-height: 3.5rem;
         margin-bottom: 1rem;
     }
+}
+
+dd{
+    margin-inline-start: 0;
+    margin-bottom: 1rem;
 }
 
 @media only screen and (min-width: 800px) {
