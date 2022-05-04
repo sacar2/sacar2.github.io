@@ -10,7 +10,7 @@ html{
 /*    color: white;*/
 }
 
-h1, h2, h3{
+h1, h2{
     font-weight: lighter;
 }
 
@@ -58,7 +58,7 @@ a {
 nav a, #projects a{
 	text-decoration: none;
 }
-a:hover, #projects a:hover{
+a:hover, #projects a:hover, .link{
 	text-decoration: underline;
 }
 a:visited{
@@ -297,6 +297,7 @@ dt{
     font-size: 0.8rem;
     font-variant: small-caps;
     font-family: 'Cormorant Garamond Bold';
+    padding-right: 0.5rem;
 }
 
 .role{
@@ -390,7 +391,20 @@ small{
     transform: rotate(180deg);
 }
 
+.bordercomponent{
+    border-left: 4px solid ghostwhite;
+    padding: 0 1rem 0.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: black -3px 0px
+}
 
+.bordercomponent p{
+    margin: 0;
+    padding: 0;
+}
+.bordercomponent small{
+    margin-bottom: 0;
+}
 @media only screen and (min-width: 600px) {
     
     html{
