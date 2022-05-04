@@ -61,6 +61,49 @@ nav a, #projects a{
 a:hover, #projects a:hover, .link{
 	text-decoration: underline;
 }
+
+details {
+  margin-bottom: .5rem;
+  overflow: hidden;
+  border: 0.5px solid black;
+  border-right-width: 1px;
+  border-bottom-width: 2px;
+  padding: 0 0.5rem;
+}
+
+summary {
+  padding: 1rem;
+  display: block;
+  padding-left: 2.2rem;
+  position: relative;
+  cursor: pointer;
+}
+
+
+details[open] > summary:before {
+  transform: rotate(90deg);
+}
+
+details #text {
+    content: "see other projects";
+}
+
+details[open] #text {
+    content: "hide other projects";
+}
+summary:before {
+  content: '';
+  border-width: .4rem;
+  border-style: solid;
+  border-color: transparent transparent transparent black;
+  position: absolute;
+  top: 1.3rem;
+  left: 1rem;
+  transform: rotate(0);
+  transform-origin: .2rem 50%;
+  transition: .25s transform ease;
+}
+
 a:visited{
     color: black;
 }
