@@ -329,21 +329,20 @@ article.yellow:hover, article.yellow:active, article.yellow:focus{
 
 .block{
     display:block;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 .secondaryinfo{
- border-left: 3px solid black;
- padding-left:1rem;
- letter-spacing: .05rem;
- font-size: .9rem;
- display: flex;
- height: auto;
+     letter-spacing: .05rem;
+     font-size: .9rem;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     gap: 1rem;
 }
 
 .secondaryinfo-block{
-    width:30%;
+    width: 100%;
     border: 1px solid black;
-    margin: 1rem;
 }
 
 .secondaryinfo-block h3{
@@ -359,6 +358,11 @@ article.yellow:hover, article.yellow:active, article.yellow:focus{
         padding: 0;
         max-width: 120px;
         
+}
+
+.funinfo-block{
+    display: flex;
+    flex-direction: column;
 }
 
 .inline{
@@ -583,6 +587,17 @@ small{
     h2{
         font-size: 2.5rem;
     }
+    
+    .secondaryinfo{
+         flex-direction: row;
+         flex-wrap: wrap;
+    }
+    .secondaryinfo-block{
+        width:46%;
+    }
+    .secondaryinfo-block:nth-child(3){
+        width:100%;
+    }
 }
 
 @media only screen and (min-width: 700px) {
@@ -590,6 +605,12 @@ small{
         font-size: 4rem;
         line-height: 3.5rem;
         margin-bottom: 1rem;
+    }
+    
+    
+    
+    .funinfo-block{
+        flex-direction: row;
     }
 }
 
@@ -622,6 +643,19 @@ dd{
         grid-column-start: 2;
         padding-bottom: 1rem;
     }
+    
+    .secondaryinfo{
+         flex-direction: row;
+         flex-wrap: nowrap;
+    }
+    .secondaryinfo-block{
+        width:33%;
+    }
+    
+    .secondaryinfo-block:nth-child(3){
+        width:33%;
+    }
+    
 }
 @media only screen and (min-width: 1200px) {
     .intro-component h2{
