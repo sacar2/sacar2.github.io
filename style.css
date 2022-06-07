@@ -1,8 +1,10 @@
 html{
 	font-family: 'Cormorant Garamond', serif;
-	padding: 1rem 0.5rem 2rem;
-	max-width: 800px;
-	margin: auto;
+/*	padding: 1rem 0.5rem 2rem;*/
+/*	max-width: 800px;*/
+/*	margin: auto;*/
+margin: 0;
+padding: 0;
     font-size: 24px;
     letter-spacing: .01rem;
     word-break: break-word;
@@ -15,7 +17,7 @@ h1, h2{
 }
 
 h2{
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     line-height: 2.5rem;
     margin: 0 0 1rem;
 }
@@ -24,6 +26,14 @@ p{
     line-height: 1.6rem;
 }
 
+.right{
+    text-align: right;
+}
+
+.challenge-title{
+    font-variant: all-petite-caps;
+    font-family: 'Cormorant Garamond Bold';
+}
 
 .project-highlight h3{
     margin: 0;
@@ -35,6 +45,55 @@ p{
 
 .project-highlight img{
     padding-bottom: 0.5rem;
+}
+
+.intro-component{
+    display: flex;
+    min-height: 80vh;
+}
+
+.intro-component img{
+    max-width: 35%;
+    object-fit: cover;
+/*    border-radius: 50px;*/
+    padding: 0 1rem 3rem;
+}
+
+.intro-component h2{
+    text-align: right;
+    margin-bottom: 0;
+}
+
+.intro-component h2 .emphasis{
+    display: none;
+}
+
+.intro-component-emphasis{
+    display: block;
+    text-align: right;
+    font-style: italic;
+    margin: 0;
+}
+
+
+.intro-component-description{
+    text-align: center;
+}
+
+.intro-component-large{
+    font-size: 1.5rem;
+}
+
+.center{
+    text-align: center;
+}
+
+strong{
+    font-family: 'Cormorant Garamond SemiBold';
+}
+
+.flex-horizontal{
+    display: flex;
 }
 
 nav{
@@ -277,6 +336,29 @@ article.yellow:hover, article.yellow:active, article.yellow:focus{
  padding-left:1rem;
  letter-spacing: .05rem;
  font-size: .9rem;
+ display: flex;
+ height: auto;
+}
+
+.secondaryinfo-block{
+    width:30%;
+    border: 1px solid black;
+    margin: 1rem;
+}
+
+.secondaryinfo-block h3{
+    padding: 0 1rem;
+}
+
+.secondaryinfo-block-content{
+    background: lavender;
+    padding: 1rem;
+}
+
+.secondaryinfo-block-content img{
+        padding: 0;
+        max-width: 120px;
+        
 }
 
 .inline{
@@ -451,7 +533,7 @@ small{
 @media only screen and (min-width: 600px) {
     
     html{
-        padding: 1rem 2rem 2rem;
+        padding: 5rem 2rem 2rem;
         font-size: 19px;
     }
     
@@ -497,6 +579,11 @@ small{
     }
 
 }
+@media only screen and (min-width: 475px) {
+    h2{
+        font-size: 2.5rem;
+    }
+}
 
 @media only screen and (min-width: 700px) {
     h2{
@@ -535,5 +622,41 @@ dd{
         grid-column-start: 2;
         padding-bottom: 1rem;
     }
-
+}
+@media only screen and (min-width: 1200px) {
+    .intro-component h2{
+        width: 60%;
+        font-size: 4vw;
+        line-height: 4.5vw;
+        display: inline;
+    }
+    
+    html{
+        max-width: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .wide-content{
+        padding: 5rem 0rem 2rem;
+        width: 1000px;
+        margin: auto;
+    }
+    .narrow-content{
+        padding: 5rem 0rem 2rem;
+        width: 800px;
+        margin: auto;
+    }
+}
+@media only screen and (min-width: 1500px) {
+    .intro-component h2 .emphasis{
+        display: inline;
+        font-size: 1.5vw;
+        line-height: 0;
+        font-style: italic;
+/*        content: "an Accenture + Microsoft venture";*/
+    }
+    .intro-component-emphasis{
+        display: none;
+    }
 }
