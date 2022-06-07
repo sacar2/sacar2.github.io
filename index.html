@@ -21,8 +21,7 @@
 		<li><a href="#"><h1>Selin Acar</h1></a></li>
 		<li><a href="#projects">Projects</a></li>
 		<li><a href="#chat">Chat</a></li>
-        <li><a href="https://selindenise.medium.com/">Blog</a></li>
-		<li>&#10024;</li>
+        <li><a href="https://selindenise.medium.com/">Blog &#10024;</a></li>
 	<ul>
 </nav>
 
@@ -40,6 +39,22 @@
             <p class="intro-component-large"><strong>thorough designs</strong><br>+</br>great <strong>communication with developers</strong><br>+</br>and <strong><em>ideas that come to life</em></strong>
         </div>
     </div>
+    
+    <div class="block">
+        <h3>Worked with...</h3>
+        <p class="inline">Banking &sdot; Fashion  &sdot; Food &sdot; Gas/Utilities &sdot; Housing &sdot; Oil/Lubricants &sdot; Small Businesses &sdot; Spirituality &sdot; Telecommunications &sdot; Transportation</p>
+        <div class="brand-images">
+            <img src="logos/cmhc.png" alt="Canadian Motgage Housing Corporation Logo">
+            <img src="logos/enbridge.png" alt="Enbridge Logo">
+            <img src="logos/metrolinx.png" alt="Metrolinx Logo">
+            <img src="logos/petrolubricants.png" alt="Petro Canada Lubricants Logo">
+            <img src="logos/saputo.png" alt="Saputo Logo">
+            <img src="logos/td.png" alt="Toronto Dominion Bank Logo">
+            <img src="logos/telus.png" alt="Telus Logo">
+            <img src="logos/tangerine.png" alt="Tangerine Bank">
+        </div>
+    </div>
+    
     <div class="secondaryinfo block">
         <div class="secondaryinfo-block">
             <h3>Skills</h3>
@@ -90,25 +105,14 @@
         </div>
     </div>
     
-    <div class="block">
-        <h3>Worked with...</h3>
-        <p class="inline">Banking &sdot; Fashion  &sdot; Food &sdot; Gas/Utilities &sdot; Housing &sdot; Oil/Lubricants &sdot; Small Businesses &sdot; Spirituality &sdot; Telecommunications &sdot; Transportation</p>
-        <div class="brand-images">
-            <img src="logos/cmhc.png" alt="Canadian Motgage Housing Corporation Logo">
-            <img src="logos/enbridge.png" alt="Enbridge Logo">
-            <img src="logos/metrolinx.png" alt="Metrolinx Logo">
-            <img src="logos/petrolubricants.png" alt="Petro Canada Lubricants Logo">
-            <img src="logos/saputo.png" alt="Saputo Logo">
-            <img src="logos/td.png" alt="Toronto Dominion Bank Logo">
-            <img src="logos/telus.png" alt="Telus Logo">
-            <img src="logos/tangerine.png" alt="Tangerine Bank">
-        </div>
-    </div>
     <div class="funinfo">
-        <h3 class="inline">Outside work,</h3>
         <div class="funinfo-block">
-            <img src="" alt="" />
-            <p>I love to adventure, play board games, discover skincare products, drink bubble tea, and I run a small business <a href="https://www.sende.ca">(www.sende.ca)</a> with one of my oldest friends.</p>
+            <img src="bobaillustration.png" alt="illustration of bubble tea swirling with stars" width="50" height="150"/>
+            <div class="funinfo-block-text">
+                <h3 class="inline">Outside work,</h3>
+                <p>I love to adventure, play board games, discover skincare products, drink bubble tea, and I run a small business <a href="https://www.sende.ca">(www.sende.ca)</a> with one of my oldest friends.</p>
+                <img src="azul.jpeg" alt="tile pieces from the game Azul"/>
+            </div>
             <img src="selin with sende pestemal in pamukkale.png" alt="selin with sende pestemal in pamukkale"/>
         </div>
     </div>
@@ -117,7 +121,7 @@
     <div id="projects">
         <h2>Projects</h2>
         <p>From research to maintenance, I've provided value throughout the full life cycle of product development.
-        <em>Note: I can't share everything due to NDAs &#129335;&#127995;&#8205;&#9792;&#65039;</em></p>
+        <em>Note: I can't share everything due to NDAs</em> &#129335;&#127995;&#8205;&#9792;&#65039;</p>
         
         <a href="2021-bank.html"><article class="project-highlight green">
             <img class="highlight-photo" src="2021-bank-images/cover.jpg" alt="">
@@ -178,13 +182,13 @@
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
-    if (window.innerWidth <= 1000) {
+<!--    if (window.innerWidth <= 1000) {-->
       if (prevScrollpos > currentScrollPos) {
         document.getElementById("navbar").style.top = "0";
       } else {
         document.getElementById("navbar").style.top = "-290px";
       }
-    }
+<!--    }-->
       prevScrollpos = currentScrollPos;
     }
 </script>
