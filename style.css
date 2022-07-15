@@ -11,7 +11,7 @@ html{
 }
 
 body{
-    margin: 5rem 0 0;
+    margin: 5rem 1rem 0;
     padding: 0;
 }
 
@@ -42,6 +42,7 @@ p{
 #about{
     animation: fadein 2s;
     position: relative;
+    scroll-snap-type: y mandatory;
 }
 
 @keyframes fadein {
@@ -125,7 +126,9 @@ strong{
 }
 
 nav{
-    background: rgba(255, 255, 255, 0.9);
+    background: white;
+    z-index: 1000;
+    width: 100%;
     padding: 0 1rem;
 }
 
@@ -162,17 +165,27 @@ a {
 nav a, #projects a{
 	text-decoration: none;
 }
-a:hover, #projects a:hover, .link{
+
+#navbar a:hover{
+    background: linear-gradient(180deg, #fff 60%, rgba(246,178,29, 0.7) 40%);
+}
+
+#navbar a>h1:hover{
+    background: linear-gradient(180deg, #fff 60%, rgba(246,178,29, 0.7) 40%);
+}
+
+#projects a:hover, .link{
 	text-decoration: underline;
 }
 
 details {
-  margin-bottom: .5rem;
-  overflow: hidden;
-  border: 0.5px solid black;
-  border-right-width: 1px;
-  border-bottom-width: 2px;
-  padding: 0 0.5rem;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+    color: black;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    padding: 0 0.5rem;
+    background: white;
 }
 
 summary {
@@ -214,12 +227,10 @@ a:visited{
 
 article{
     padding: 1rem 2rem;
-    margin-bottom: 2rem;
     border: black 0.5px solid;
     border-right: black 2px solid;
     border-bottom: darkslategray 3px solid;
     transition: 0.3s ease-in-out;
-    box-shadow: 20px 20px whitesmoke;
 }
 
 article h3::before{
@@ -234,105 +245,79 @@ article h3::before{
     margin-left: 2rem;
 }
 
-.chat-links{
-    margin: 0;
-    display: grid;
-    place-items: center;
-    grid-template-columns:100%;
-    column-gap: 20px;
-}
-
-.chat-links p {
+.chat-link{
     transform: translatey(0px);
     animation: float 10s ease-in-out infinite;
     mix-blend-mode: multiply;
-    text-align: center;
     color: white;
-    background-color: #E6EFDA;
-    padding: 50px;
+    background-color: #0051C2;
+    padding: 1rem 2rem;
     position: relative;
-    box-shadow: 20px 20px whitesmoke;
     font-size: 1rem;
-    width: 50%;
+    width: fit-content;
     margin: 0;
-/*    border: 1px black solid;*/
-/*    border-right: 3px black solid;*/
-/*    border-bottom: 2px black solid;*/
+    border-radius: 2.5rem;
+    display: block;
 }
 
-.chat-links p:nth-child(1){
-    background-color: aliceblue;
+.chat-link:nth-child(2){
+    float: right;
 }
 
-.chat-links p:nth-child(2){
-    top: 40px;
+.chat-link:nth-child(odd){
+    background-color: #6372FF;
+    margin: 1rem;
+    float: left;
 }
 
-.chat-links p:before {
+.chat-link:before {
     content: "";
     width: 0px;
     height: 0px;
     position: absolute;
   }
 
-.chat-links p:nth-child(1):before {
-    border-top: 10px solid aliceblue;
-    border-right: 10px solid aliceblue;
+.chat-link:nth-child(odd):before {
+    border-top: 10px solid #6372FF;
+    border-right: 10px solid #6372FF;
     border-bottom: 10px solid transparent;
     border-left: 10px solid transparent;
-    left: -20px;
+    left: -15px;
     top: 40px;
 }
 
-.chat-links p:nth-child(1):after {
-    content: "";
-    width: 0px;
-    height: 0px;
-    position: absolute;
-/*    border-top: 11px solid black;*/
-/*    border-right: 10px solid black;*/
+.chat-link:nth-child(2):before {
+    border-top: 10px solid transparent;
+    border-right: 10px solid #0051C2;
+    border-bottom: 10px solid #0051C2;
+    border-left: 10px solid transparent;
+    left: -15px;
+    top: 40px;
+}
+
+
+.chat-link:hover{
+    background: darkslategray;
+}
+
+.chat-link:nth-child(odd):hover:before {
+    border-top: 10px solid darkslategray;
+    border-right: 10px solid darkslategray;
     border-bottom: 10px solid transparent;
-    border-left: 11px solid transparent;
-    left: -22px;
-    top: 39px;
-    z-index: -5;
+    border-left: 10px solid transparent;
+    left: -15px;
+    top: 40px;
 }
 
-.chat-links p:nth-child(2):before {
+.chat-link:nth-child(2):hover:before {
     border-top: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid #E6EFDA;
-    border-left: 10px solid #E6EFDA;
-    right: -19px;
-    top: 80px;
-/*    box-shadow: 0 1px black;*/
+    border-right: 10px solid darkslategray;
+    border-bottom: 10px solid darkslategray;
+    border-left: 10px solid transparent;
+    left: -15px;
+    top: 40px;
 }
 
-.chat-links p:nth-child(2):after {
-    content: "";
-    width: 0px;
-    height: 0px;
-    position: absolute;
-    border-top: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid whitesmoke;
-    border-left: 10px solid whitesmoke;
-    right: -40px;
-    top: 90px;
-    z-index: -5;
-}
-
-.chat-links p:hover {
-    box-shadow: 20px 20px black;
-}
-
-.chat-links p:nth-child(2):hover:after {
-    border-top: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid black;
-    border-left: 10px solid black;
-    
-}
 
 
 @keyframes float {
@@ -353,28 +338,32 @@ article h3::before{
 article:hover{
     margin-top:-3px;
     margin-left:-3px;
+    margin-right: 3px;
 }
 
 article.green:hover, article.green:active, article.green:focus{
-/*    background: honeydew;*/
-    box-shadow: 20px 20px honeydew;
+    background: honeydew;
+/*    box-shadow: 20px 20px honeydew;*/
 
 }
 
 article.purple:hover, article.purple:active, article.purple:focus{
-/*    background: lavender;*/
-    box-shadow: 20px 20px lavender;
+    background: lavender;
+/*    box-shadow: 20px 20px lavender;*/
 }
 
 article.yellow:hover, article.yellow:active, article.yellow:focus{
-/*    background: LightGoldenRodYellow;*/
-    box-shadow: 20px 20px lightgoldenrodyellow;
+    background: LightGoldenRodYellow;
+/*    box-shadow: 20px 20px lightgoldenrodyellow;*/
 
 }
 
 .block{
-    display:block;
-    margin-bottom: 3rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .secondaryinfo{
      letter-spacing: .05rem;
@@ -460,8 +449,37 @@ mark{
     background: linear-gradient(180deg, #fff 60%, rgba(81,176,67, 0.7) 40%);
 }
 
-#skillstools, #projects, #chat{
+
+.project-highlight:hover .mark-purple{
+    background: linear-gradient(180deg, lavender 60%, rgba(195,150,209, 0.7) 40%);
+}
+
+.project-highlight:hover .mark-green{
+    background: linear-gradient(180deg, honeydew 60%, rgba(81,176,67, 0.7) 40%);
+}
+
+.project-highlight:hover .mark-yellow{
+    background: linear-gradient(180deg, LightGoldenRodYellow 60%, rgba(246,178,29, 0.7) 40%);
+}
+
+
+#skillstools, .funinfo, #chat{
     margin-top: 6rem;
+}
+
+#projects h2{
+    color: transparent;
+}
+
+.projects-details{
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+}
+
+footer{
+    margin: 10rem 1rem 2rem;
+    text-align: center;
 }
 
 .other-projects p{
@@ -608,10 +626,22 @@ small{
 .bordercomponent small{
     margin-bottom: 0;
 }
+
+.reveal{
+        position: relative;
+        transform: translatey(150px);
+        opacity: 0;
+        transition: all 2s ease
+}
+
+.reveal.active{
+    transform: translatey(0px);
+    opacity: 1;
+}
 @media only screen and (min-width: 600px) {
     
     html{
-        padding: 5rem 2rem 2rem;
+        padding: 5rem 0rem 2rem;
         font-size: 19px;
     }
     
@@ -636,12 +666,7 @@ small{
     .other-projects{
         padding-left: 1rem;
     }
-
-    .chat-links{
-        grid-template-columns: 50% 50%;
-    }
-    
-    .chat-links p {
+    .chat-link {
         font-size: 1.5rem;
         margin: 1rem 0;
     }
@@ -672,6 +697,19 @@ small{
     
     #navbar {
         left: 1rem;
+    }
+    
+    .chat-link{
+        padding: 40px 80px;
+    }
+    
+    .chat-link:nth-child(2){
+        left: 50%;
+        float: none;
+    }
+
+    .chat-link:nth-child(odd){
+        left: 20%;
     }
 }
 
@@ -730,6 +768,11 @@ small{
     .brand-images{
         grid-template-columns: auto auto auto auto;
     }
+    
+    .twobytwogrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -756,6 +799,11 @@ small{
         width: 1000px;
         margin: auto;
     }
+    
+    .full-content{
+        padding: 0rem 0rem 2rem;
+    }
+    
     .narrow-content{
         padding: 5rem 0rem 2rem;
         width: 800px;
