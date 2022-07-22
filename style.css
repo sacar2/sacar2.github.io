@@ -778,7 +778,7 @@ small{
     }
     
     .brand-images{
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto;
     }
     
     .twobytwogrid{
@@ -789,7 +789,7 @@ small{
 
 @media only screen and (min-width: 1000px) {
     .brand-images{
-        grid-template-columns: auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto;
     }
 }
 @media only screen and (min-width: 1200px) {
