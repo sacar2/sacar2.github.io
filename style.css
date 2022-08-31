@@ -413,6 +413,10 @@ article.yellow:hover, article.yellow:active, article.yellow:focus{
         
 }
 
+.twobytwogrid a{
+    margin: 1rem;
+}
+
 .funinfo-block{
     display: flex;
     flex-direction: column;
