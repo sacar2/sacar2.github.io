@@ -161,6 +161,10 @@ ol li, ul li{
 	margin-bottom: 1rem;
 }
 
+.resultsCTA{
+    margin-bottom: 2rem;
+}
+
 a {
     color: black;
 }
