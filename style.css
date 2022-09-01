@@ -227,10 +227,8 @@ a:visited{
 
 article{
     padding: 1rem 2rem;
-    border: black 0.5px solid;
-    border-right: black 2px solid;
-    border-bottom: darkslategray 3px solid;
     transition: 0.3s ease-in-out;
+    box-shadow: 4px 8px 10px lightgrey;
 }
 
 article h3::before{
