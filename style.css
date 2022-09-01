@@ -154,7 +154,10 @@ ul{
 }
 
 ul li{
-	list-style: none;
+    list-style: none;
+}
+
+ol li, ul li{
 	margin-bottom: 1rem;
 }
 
@@ -226,9 +229,12 @@ a:visited{
 }
 
 article{
-    padding: 1rem 2rem;
     transition: 0.3s ease-in-out;
-    box-shadow: 4px 8px 10px lightgrey;
+}
+
+.card{
+    padding: 1rem 2rem;
+    box-shadow: 4px 4px 10px lightgrey;
 }
 
 article h3::before{
@@ -542,9 +548,8 @@ dt{
 }
 
 .description{
-    border: 1px solid black;
-    padding: 1rem;
-    box-shadow: 10px 10px whitesmoke;
+    font-size: 2rem;
+    line-height: 3rem;
 }
 
 .role:before{
