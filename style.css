@@ -239,6 +239,7 @@ article{
 .card{
     padding: 1rem 2rem;
     box-shadow: 4px 4px 10px lightgrey;
+    box-sizing: border-box;
 }
 
 article h3::before{
