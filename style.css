@@ -587,7 +587,7 @@ small{
 }
 
 .cover-image{
-    max-height:40vh;
+    max-height:50vh;
     object-fit: cover;
 }
 
