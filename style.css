@@ -376,6 +376,10 @@ article.yellow:hover, article.yellow:active, article.yellow:focus{
 
 }
 
+article.blue:hover, article.blue:active, article.blue:focus{
+    background: azure;
+}
+
 .block{
     min-height: 100vh;
     display: flex;
@@ -473,6 +477,9 @@ mark{
 .mark-green{
     background: linear-gradient(180deg, #fff 60%, rgba(81,176,67, 0.7) 40%);
 }
+.mark-blue{
+    background: linear-gradient(180deg, #fff 60%, rgba(50,180,255, 0.7) 40%);
+}
 
 
 .project-highlight:hover .mark-purple{
@@ -489,6 +496,10 @@ mark{
 
 .project-highlight:hover .mark-red{
     background: linear-gradient(180deg, MistyRose 60%, rgba(255,70,72, 0.7) 40%);
+}
+
+.project-highlight:hover .mark-blue{
+    background: linear-gradient(180deg, Azure 60%, rgba(50,180,255, 0.7) 40%);
 }
 
 
