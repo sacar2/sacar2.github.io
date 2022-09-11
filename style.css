@@ -812,6 +812,10 @@ small{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+    
+    .other-projects{
+        max-width: 950px;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
