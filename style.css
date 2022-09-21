@@ -804,9 +804,9 @@ small{
         flex-direction: row;
     }
     
-    .brand-images{
-        grid-template-columns: auto auto auto auto auto;
-    }
+/*    .brand-images{*/
+/*        grid-template-columns: auto auto auto auto auto;*/
+/*    }*/
     
     .twobytwogrid{
         display: grid;
@@ -819,9 +819,9 @@ small{
 }
 
 @media only screen and (min-width: 1000px) {
-    .brand-images{
-        grid-template-columns: auto auto auto auto auto auto auto auto auto;
-    }
+/*    .brand-images{*/
+/*        grid-template-columns: auto auto auto auto auto auto auto auto auto;*/
+/*    }*/
 }
 @media only screen and (min-width: 1200px) {
     .intro-component h2{
