@@ -584,7 +584,8 @@ dt{
 }
 
 .bullets li{
-    list-style: disc;
+/*    list-style: disc;*/
+    list-style: "\2012  ";
 }
 small{
     font-style: italic;
