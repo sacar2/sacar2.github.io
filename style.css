@@ -805,9 +805,10 @@ small{
         flex-direction: row;
     }
     
-/*    .brand-images{*/
-/*        grid-template-columns: auto auto auto auto auto;*/
-/*    }*/
+    .brand-images img{
+        height: 7rem;
+        padding: 1.8rem;
+    }
     
     .twobytwogrid{
         display: grid;
