@@ -39,7 +39,7 @@
 </div>
 <div>
     <h2>Problem</h2>
-    <p>Most people are familiar with personal banking but there is another side of retail banking that belongs to businesses: from those with single stores handling transactions for everyday business purchases, to those with multiple locations or personnel who are sending and receiving hundreds of transactions a day. The latter is the type of platform I designed for throughout this case study with my UX design teammate.</p>
+    <p>Most people are familiar with personal banking but there is another side of retail banking that belongs to businesses: from those with single stores handling transactions for everyday business purchases, to those with multiple locations or personnel who are sending and receiving hundreds of transactions a day. The latter is the type of platform I designed for throughout this case study with my UX design teammate. This is an extremely important platform, given businesses bring the most money to banks due to their large number of transactions.</p>
     <p>Our pod was in charge of six features between two business banking platforms. These features would allow business customers to send and receive payments, authorize payments, manage business account transaction limitations, deal with remittance information, and track wire payments. Many of these processes were done manually with people and paper, so our pod had to design the manual processes for the digital space, as well as add in new functionality.</p>
 </div>
 <div>
@@ -51,17 +51,17 @@
         <li><b>Detailed Design </b>(creating detailed annotated wireframes including all states and edge cases)</li>
         <li><b>Visual Design </b>(creating design specifications accurate to the expected look and feel)</li>
     </ol>
-    <p>We worked closely with the business to keep this fast-paced project on track and up to/above expectations throughout.</p>
+    <p>The work throughout is not very creative as this bank is extremely process heavy and worked with a lot of technical limitations. We worked closely with the business to keep this fast-paced project on track and up to/above expectations throughout.</p>
 </div>
 <div>
     <h2>1: High-level design phase</h2>
     <p>We needed to first understand the user goals and motivations. My first two weeks on the project were spent going through existing files (style guides and interaction designs), participating in meetings, asking a ton of questions, and touching base with other pods working on other functions on the platform.</p>
     <p>My pod had the opportunity to have multiple meetings with SMEs and the employee business banking platform users. These meetings helped us better understand the processes and the pain points in the experience. Some of these processes were completely manual so digitizing them required an in-depth understanding of the existing manual processes.</p>
-    <img class="project-image" src="assets/2021-bank/meeting-questions.jpg" alt="questions and notes taken during a meeting">
-        <small>Many questions were prepared before the SME meetings and loads of information were captured during. All this data was synthesized afterwards to help guide the designs.</small>
+<!--    <img class="project-image" src="assets/2021-bank/meeting-questions.jpg" alt="questions and notes taken during a meeting">-->
+<!--        <small>Many questions were prepared before the SME meetings and loads of information were captured during. All this data was synthesized afterwards to help guide the designs.</small>-->
     <h3>Requirements + takeaways from stakeholder meetings</h3>
     <div>
-        <h4>Send and Recieve Payments</h4>
+        <h4>Send and Recieve Payments (Business Customers)</h4>
         <ul class="bullets">
             <li>Ability to create/delete a payment, multi-beneficiary payments etc.</li>
             <li>Business accounts deal with tens to hundreds or more transactions within any given business day.</li>
@@ -74,25 +74,24 @@
         </ul>
     </div>
     <div>
-        <h4>Authorization & Entitlement</h4>
+        <h4>Authorization & Entitlement (Business Customers + DBank employees)</h4>
         <ul class="bullets">
-            <li>Authorization: Give System Administrators (SAs) (business customers) in an organization the ability to approve payments. Currently, SAs can only view/manage individual users, but business customers would like to be able to give authorization to a group of users at a time.</li>
+            <li>Authorization: Give System Administrators (SAs) (business customers) the ability to approve payments. Currently, SAs can only view/manage individual users, but business customers would like to give authorization to multiple users at a time.</li>
             <li>Entitlement: DBank employees can set entitlements to Business customers, creating SAs that can create payments (access management to set, create, or approve access). This feature would enable the management of a user account's real-time payment services.</li>
             <li>Account removal and deletion should be available for both.</li>
         </ul>
     </div>
     <div>
-        <h4>Billing</h4>
+        <h4>Billing (Dbank Employees)</h4>
         <ul class="bullets">
-            <li>Goals are to optimize revenue, reduce operational risks, and set consumer-centric pricing and billing. DBank employee.</li>
-            <li>Business customers would need a way to view bills.</li>
+            <li>Goals are to optimize revenue, reduce operational risks, and set consumer-centric pricing and billing.</li>
             <li>There are front office and back office DBank employees - some features are only available to some so just design for both until a business decision can be made. Terminology is different (just need to note for business logic).</li>
             <li>Need to show all accounts attached to the service for billing services.</li>
             <li>There are product-specific billing preferences which affect the information that is shown on screen.</li>
         </ul>
     </div>
     <div>
-        <h4>Recipients (Beneficiary)</h4>
+        <h4>Recipients aka Beneficiary (Business Customers)</h4>
         <ul class="bullets">
             <li>Accessible from the Payments landing page.</li>
             <li>Ability to search recipients (only first 1000 results available).</li>
@@ -103,22 +102,24 @@
         </ul>
     </div>
     <div>
-        <h4>Remittance Information</h4>
+        <h4>Remittance Information (Business Customers)</h4>
         <ul class="bullets">
-            <li>Ability to add additional notes or attachments when sending a payment.</li>
+            <li>For some reason, it took me a while to wrap my head around what this was, but it is essentially fields of information that are predetermined by the business - standard info. We just need to digitize this.</li>
+        </ul>
         </ul>
     </div>
     <div>
-        <h4>Wire Payments</h4>
+        <h4>Wire Payments (Business Customers)</h4>
         <ul class="bullets">
-            <li>Very limited information here, but we can plan this to be scalable for the future.</li>
             <li>There was some archived exploration done but this needs to be revisited.</li>
+            <li>Very limited information here, but we can plan this to be scalable for the future.</li>
             <li>Some logic needs to be mapped out for detailed design.</li>
         </ul>
     </div>
     <h3>Creating the high-level designs</h3>
     <p>In this phase, we created high-level user task flows for the happy paths, and the unhappy paths. These were designed given the points above (plus other detailed notes we gathered from interviews). The designs were iterated upon until we gained stakeholder approval. We decided to hold stakeholder meetings three times a week to iterate quickly.</p>
-    <img class="project-image" src="assets/2021-bank/highlevelflow.jpg" alt="high-level flow from Adobe XD">
+<!--    <img class="project-image" src="assets/2021-bank/highlevelflow.jpg" alt="high-level flow from Adobe XD">-->
+<img class="project-image" src="assets/2021-bank/artboard.svg" alt="high-level flow from Adobe XD">
         <small>Our high-level flows captured the most common screens related to a user's task. This is an example of a high-level flow for creating a payment as a business customer.</small>
 </div>
 <div>
@@ -128,23 +129,23 @@
         <li>Creating high-level designs and any supplementary documentation that would help development and business understand, including flow charts and state diagrams.</li>
         <li>Including edge cases, error states, and anything short of visual designs.</li>
         <li>Highlighting features for future state development vs short-term development.</li>
-        <li>Adding to the changelog at the top of the design file.</li>
-        <li>Exporting a PDF of the newest version of designs for developers.</li>
-        <li>Creating a meeting agenda and questions to ask business and technology.</li>
+        <li>Adding to the design file's changelog.</li>
+        <li>Exporting new PDF version of the designs for developers.</li>
+        <li>Preparing a meeting agenda and questions to ask business and technology.</li>
         <li>Presenting designs at the stakeholder meeting, getting approvals and answers, and finding out any new changes, requirements, and constraints.</li>
-        <li>Updating designs.</li>
-        <li>Reiterate and repeat all steps until stakeholders approve.</li>
+        <li>Updating designs based on feedback then repeat all steps until stakeholders approve.</li>
     </ol>
+    <p>Along the way, we ran into plenty of challenges (outlined in the <a href="#Challenges">Challenges section</a>).</p>
+
     <div>
         <h3>Supporting Documentation</h3>
-        <p>In the client contract, our deliverables were a high-level design with annotations for development. Pretty straightforward, <em>right?</em></p>
         <div>
             <h4 class="challenge-title">Challenge: Showcasing all designs and intentions in a PDF document</h3>
             <div class="bordercomponent">
-                <p>Once we dived into the finer details, having only wireframes with annotations wasn't enough. More documentation would be necessary to ensure the developers had what they needed to implement accurate designs.</p>
+                <p>In the contract, our deliverables were a high-level design with annotations for development. Once we dived into the finer details, having only wireframes with annotations wasn't enough. More documentation was necessary to ensure the developers had what they needed to implement accurate designs.</p>
             </div>
         </div>
-        <p>The work extended to include flow charts, state diagrams, word documents and anything that would help the ideas our pod designed to come into existence. State Diagrams were very useful for developers to quickly understand the logic behind the designs.</p>
+        <p>The work extended to include flow charts, state diagrams, word documents and anything to help the ideas our pod designed to come into existence. State Diagrams were very useful for developers to quickly understand the logic behind the designs.</p>
         <img class="project-image" src="assets/2021-bank/Payment-Transfers-State-Diagram.jpg" alt="State Diagram example">
             <small>An example of one of the state diagrams delivered with detailed annotations. This state diagram helped make the logic of Interac e-transfer and wire payment statuses clear. Clearly defining these statuses made creating designs easier and ensured that all stakeholders in the development process were on the same page.</small>
     </div>
@@ -170,9 +171,9 @@
     <small>An example of visual designs delivered.</small>
     <p>Inspecting designs wasn't available on this project as the developers and all business personnel requested PDF documentation for hand-off rather than jumping into the XD cloud files. Due to this inefficiency and many other reasons, Figma is being transitioned to in the organization as of 2022.</p>
 </div>
-<div>
+<div id="Challenges">
     <h2>Challenges</h2>
-    <p>Given the user tasks to solve and many new asks throughout the project, the number of potential pages <em>grew quickly</em>. Not to mention, we were facing a few other challenges: an inconsistent design system, and my UX designer teammate and I have both never worked with Adobe XD before. Hiccups we encountered included <b>lost work, sync issues, and time lost by not fully utilizing Adobe XD's features</b>.</p>
+    <p>Given the number of user tasks and new asks throughout the project, the number of potential pages <em>grew quickly</em>. Not to mention, we were facing a few other challenges: an inconsistent design system, and my UX designer teammate and I have both never worked with Adobe XD before. Hiccups we encountered included <b>lost work, sync issues, and time lost by not fully utilizing Adobe XD's features</b>.</p>
         
         <div>
             <h4 class="challenge-title">Challenge: Technical constraints and scope changes</h3>
@@ -185,7 +186,7 @@
             <div class="bordercomponent">
                 <p>The platforms we were designing for had strict accessibility constraints, so we relied on pre-existing components that had approval from legal, accessibility, etc. Any new components required a strong case and to be fully reviewed by accessibility.</p>
                 <p>As soon as I started the project, I realized that the design system we had been using was missing details required for development. Upon further search, older components included those missing specifications but were inconsistent with the newer design system. I brought this up to the bank's experience design lead early in the project.</p>
-                <p>From that discussion, our pod started our own fleshed-out visual design component library and design system we used for all our six mini-projects. We held weekly sessions to discuss progress, components, and make decisions. This design system included things that were not clear in the older design systems and new components and interactions related to our mini-projects. This initiative helped us greatly to get through our delivery dates and ensured that the correct interactions and sizes were available to developers. <small>Note: This was a priority, but as the project unravelled, we discovered a team undertook the task of creating a design system for <em>all</em> of the bank's various platforms. This was great news; learning something better would be coming in the future. If the initiative didn't exist, it would be something I would have pushed the design leads and ultimately the client to undertake.</small></p>
+                <p>From that discussion, our pod started our own fleshed-out visual design component library and design system we used for all our six mini-projects. We held weekly sessions to discuss progress, components, and make decisions. This design system included things that were not clear in the older design systems and new components and interactions related to our mini-projects. This initiative helped us greatly to get through our delivery dates and ensured that the correct interactions and sizes were available to developers. <small>Note: This was a priority, but as the project unravelled, we discovered a team undertook the task of creating a design system for <em>all</em> of the bank's various platforms. This was great news; knowing improvment was coming. If the initiative didn't exist, it would be something I would have pushed the design leads and ultimately the client to undertake.</small></p>
                 <img class="project-image" src="assets/2021-bank/UIKitInitiatives.png" alt="Visual Design example">
             </div>
         </div>
