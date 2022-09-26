@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.5.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 2776 1585" style="enable-background:new 0 0 2776 1585;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_00000065064294680342088300000017048130150639131265_);}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:#EBEBEB;stroke:#CCCCCC;stroke-miterlimit:10;}
+	.st3{fill:#1C1C1C;}
+	.st4{font-family:'Helvetica';}
+	.st5{font-size:11px;}
+	.st6{fill:none;stroke:#B3B3B3;stroke-miterlimit:10;}
+	.st7{fill:#444444;}
+	.st8{fill:none;stroke:#707070;}
+	.st9{fill:#FAFAFA;}
+	.st10{font-size:14px;}
+	.st11{fill:none;}
+	.st12{fill:none;stroke:#979797;stroke-miterlimit:10;}
+	.st13{fill:#707070;}
+	.st14{font-size:20px;}
+	.st15{font-size:22px;}
+	.st16{fill:#D8D8D8;}
+	.st17{fill:#1A5336;}
+	.st18{font-size:18px;}
+	.st19{fill:#555555;}
+	.st20{font-size:16px;}
+	.st21{fill:none;stroke:#DADADA;}
+	.st22{fill:#F7E8E9;}
+	.st23{font-size:12px;}
+	.st24{fill:#AE1100;}
+	.st25{fill:#F3F3F3;}
+	.st26{fill:#FF6127;}
+	.st27{fill:#EBEBEB;}
+	.st28{fill:none;stroke:#CCCCCC;stroke-miterlimit:10;}
+	.st29{fill:#787878;}
+	.st30{fill:#171E52;}
+	.st31{font-family:'LaoMN';}
+	.st32{font-size:21px;}
+	.st33{fill:#34B234;}
+	.st34{font-size:10px;}
+</style>
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="2776" height="1585"/>
+	</defs>
+	<clipPath id="SVGID_00000137123616298807988360000009545504432460094084_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g id="e" style="clip-path:url(#SVGID_00000137123616298807988360000009545504432460094084_);">
+		<rect class="st1" width="2776" height="1585"/>
+		<g transform="translate(90 216)">
+			<rect class="st2" width="128" height="1300"/>
+			<text transform="matrix(1 0 0 1 42.908 654)" class="st3 st4 st5">[taskbar]</text>
+			<rect y="1200" class="st2" width="1280" height="100"/>
+			<text transform="matrix(1 0 0 1 623.38 1259)" class="st3 st4 st5">[footer]</text>
+			<rect class="st2" width="1280" height="72"/>
+			<text transform="matrix(1 0 0 1 603.195 40)" class="st3 st4 st5">[top navigation]</text>
+			<rect class="st6" width="1280" height="1300"/>
+			<g transform="translate(630 1042)">
+				<g>
+					<path class="st7" d="M22,0h106c12.2,0,22,9.8,22,22l0,0c0,12.2-9.8,22-22,22H22C9.8,44,0,34.2,0,22l0,0C0,9.8,9.8,0,22,0z"/>
+					<path class="st8" d="M22,0.5h106c11.9,0,21.5,9.6,21.5,21.5l0,0c0,11.9-9.6,21.5-21.5,21.5H22C10.1,43.5,0.5,33.9,0.5,22l0,0
+						C0.5,10.1,10.1,0.5,22,0.5z"/>
+				</g>
+				<text transform="matrix(1 0 0 1 60.009 26)" class="st9 st4 st10">Done</text>
+			</g>
+			<g transform="translate(0 12)">
+				<g transform="translate(160 247)">
+					<rect class="st11" width="1088" height="193"/>
+					<rect x="0.5" y="0.5" class="st12" width="1087" height="192"/>
+				</g>
+				<text transform="matrix(1 0 0 1 353.583 358)" class="st13 st4 st14">The status below indicates whether the payment has been successfully sent to </text>
+				<text transform="matrix(1 0 0 1 425.302 382)" class="st13 st4 st14">the recipient at this time or if it is pending further authorization.</text>
+				<text transform="matrix(1 0 0 1 546.627 315)" class="st3 st4 st15">You have approved 3 payments.</text>
+				<circle class="st16" cx="704.5" cy="244.5" r="40.5"/>
+			</g>
+			<g transform="translate(1168 148)">
+				<g>
+					<rect class="st1" width="36" height="36"/>
+					<rect x="0.5" y="0.5" class="st12" width="35" height="35"/>
+				</g>
+				<path class="st17" d="M22.8,26.6h-9.6c-0.5,0-0.8-0.4-0.8-0.8v-1.5h-2.3c-0.6,0-1.1-0.5-1.1-1.1v-6.4c0-0.6,0.5-1.1,1.1-1.1h2.5
+					v-4.9c0-0.5,0.4-0.8,0.8-0.8h6.9c0.2,0,0.3,0,0.4,0.2l2.5,2.5l0.1,0.1c0.1,0.1,0.2,0.2,0.2,0.4v2.6h2.5c0.6,0,1.1,0.5,1.1,1.1
+					v6.4c0,0.6-0.5,1.1-1.1,1.1h-2.3v1.5C23.6,26.2,23.2,26.6,22.8,26.6z M13.3,21.8v3.7h9.3v-3.7H13.3z M13.2,21h9.6
+					c0.4,0,0.6,0.3,0.6,0.6v1.5h2.4v-6.3h-2v2.6c0,0.5-0.4,0.9-0.9,0.9H13c-0.5,0-0.9-0.4-0.9-0.9v-2.6h-2v6.3h2.4v-1.5
+					C12.6,21.3,12.9,21,13.2,21C13.2,21,13.2,21,13.2,21z M12.9,16.8v2.6c0,0.1,0.1,0.1,0.1,0.1c0,0,0,0,0,0h10
+					c0.1,0,0.1-0.1,0.1-0.1v-2.6L12.9,16.8L12.9,16.8z M13.7,11.1v4.5h8.6v-1.8h-2.2c-0.4,0-0.4-0.5-0.4-0.5v-2.2L13.7,11.1z"/>
+				<g transform="translate(44)">
+					<g>
+						<rect class="st1" width="36" height="36"/>
+						<rect x="0.5" y="0.5" class="st12" width="35" height="35"/>
+					</g>
+					<g transform="translate(11.106 10)">
+						<path class="st17" d="M6.1,0C5.8,0,5.5,0.3,5.5,0.7v10.7L1.2,7.1c-0.3-0.3-0.7-0.3-1,0C0.1,7.2,0.1,7.3,0,7.4
+							C0,7.7,0,7.9,0.2,8.1l5.5,5.5c0,0,0.1,0.1,0.1,0.1h0l0.1,0h0c0,0,0.1,0,0.1,0c0,0,0.1,0,0.1,0c0,0,0.1,0,0.1,0
+							c0,0,0.1,0,0.1,0h0l0.1,0h0l0.1-0.1l5.5-5.5c0.3-0.3,0.3-0.7,0-1c-0.3-0.3-0.7-0.3-1,0c0,0,0,0,0,0l-4.3,4.3V0.7
+							C6.8,0.3,6.5,0,6.1,0z"/>
+						<path class="st17" d="M0.7,16.6h10.9c0.4,0,0.7-0.3,0.7-0.7c0,0,0,0,0,0c0-0.4-0.3-0.7-0.7-0.7c0,0,0,0,0,0H0.7
+							c-0.4,0-0.7,0.3-0.7,0.7C0,16.3,0.3,16.6,0.7,16.6C0.7,16.6,0.7,16.6,0.7,16.6z"/>
+					</g>
+				</g>
+			</g>
+			<g transform="translate(0 220)">
+				<g transform="translate(160 257)">
+					<rect class="st11" width="1088" height="298"/>
+					<rect x="0.5" y="0.5" class="st12" width="1087" height="297"/>
+				</g>
+				<text transform="matrix(1 0 0 1 184 391)" class="st3 st4 st18">Coca Cola</text>
+				<text transform="matrix(1 0 0 1 184 487)" class="st3 st4 st18">Coca TOR</text>
+				<g transform="translate(2 69)">
+					<text transform="matrix(1 0 0 1 587 336)" class="st19 st4 st20">Payment ID: RTRR000ABC0001</text>
+					<text transform="matrix(1 0 0 1 587 311)" class="st3 st4 st18">$2,234.00</text>
+				</g>
+				<g transform="translate(2 165.422)">
+					<text transform="matrix(1 0 0 1 587 336)" class="st19 st4 st20">Payment ID: RTRR000ABC123D</text>
+					<text transform="matrix(1 0 0 1 587 311)" class="st3 st4 st18">$2,234.00</text>
+				</g>
+				<text transform="matrix(1 0 0 1 1060.6641 390)" class="st3 st4 st20" style="text-decoration: underline;">View Payment Details</text>
+				<text transform="matrix(1 0 0 1 1060.6641 486)" class="st3 st4 st20" style="text-decoration: underline;">View Payment Details</text>
+				<text transform="matrix(1 0 0 1 184 309)" class="st3 st4 st14">Payments Successfully Sent</text>
+				<path class="st21" d="M184,433.4l1032-1.4"/>
+			</g>
+			<g transform="translate(0 543)">
+				<g transform="translate(160 257)">
+					<rect class="st11" width="1088" height="194"/>
+					<rect x="0.5" y="0.5" class="st12" width="1087" height="193"/>
+				</g>
+				<text transform="matrix(1 0 0 1 190 415)" class="st3 st4 st18">TDS Logistics</text>
+				<g transform="translate(2 101)">
+					<text transform="matrix(1 0 0 1 663 314)" class="st3 st4 st18">$2,234.00</text>
+				</g>
+				<text transform="matrix(1 0 0 1 1060.6641 414)" class="st3 st4 st20" style="text-decoration: underline;">View Payment Details</text>
+				<text transform="matrix(1 0 0 1 184 300)" class="st3 st4 st14">Payments Rejected/Cancelled</text>
+				<g transform="translate(184 320)">
+					<rect class="st22" width="1032" height="56"/>
+					<text transform="matrix(1 0 0 1 72 33)" class="st3 st4 st23">This payment cannot be sent at this time. Please contact DBank for more details.</text>
+					<g transform="translate(32 16)">
+						<rect class="st11" width="24" height="24"/>
+						<g transform="translate(1.5 1.5)">
+							<rect class="st11" width="21" height="21"/>
+							<g transform="translate(0 1)">
+								<path class="st24" d="M18.7,19H2.3C1,19,0,17.9,0,16.6c0-0.4,0.1-0.8,0.3-1.2L8.4,1.2C8.8,0.4,9.6,0,10.5,0h0
+									c0.8,0,1.6,0.4,2,1.2l8.2,14.3c0.6,1.1,0.2,2.6-0.9,3.2C19.5,18.9,19.1,19,18.7,19L18.7,19z"/>
+								<g transform="translate(9.5 5.75)">
+									<rect x="0.1" y="7.4" class="st1" width="2" height="1.9"/>
+									<path class="st1" d="M0.3,6.4h1.5L2.1,0H0L0.3,6.4z"/>
+								</g>
+							</g>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+		<g transform="translate(62)">
+			<rect x="1690" class="st25" width="1024" height="1585"/>
+			<text transform="matrix(1 0 0 1 1750 229)" class="st4 st20">This is the confirmation page for successfully approving multiple payments. This confirmation page gives the user visibility </text>
+			<text transform="matrix(1 0 0 1 1750 255)" class="st4 st20">into the status of each payment once they are approved by the authorizer. The payments here can include payments ready </text>
+			<text transform="matrix(1 0 0 1 1750 281)" class="st4 st20">to be sent to the recipient as well as payments that require further authorizations.</text>
+			<text transform="matrix(1 0 0 1 1750 333)" class="st4 st20">As such, approved payments can be categorized into these status: complete (successfully sent), rejected/cancelled, </text>
+			<text transform="matrix(1 0 0 1 1750 359)" class="st4 st20">processing, pending depending on the outcome of system checks and Interac response on the approved payments.</text>
+			<g transform="translate(0 24)">
+				<g transform="translate(723 48)">
+					<circle class="st26" cx="1042" cy="378" r="15"/>
+					<text transform="matrix(1 0 0 1 1038 384)" class="st1 st4 st18">1</text>
+				</g>
+				<text transform="matrix(1 0 0 1 1804 423)" class="st4 st20">Success message in the header here will let the users know the total number of payments they approved in this </text>
+				<text transform="matrix(1 0 0 1 1804 449)" class="st4 st20">action. The subhead in this section informs the user the payments statuses after this approval. This will depend on </text>
+				<text transform="matrix(1 0 0 1 1804 475)" class="st4 st20">whether it has been successfully sent to the recipient, rejected/cancelled by DBank or Interac, still processing, or </text>
+				<text transform="matrix(1 0 0 1 1804 501)" class="st4 st20">require further approval.</text>
+			</g>
+			<g transform="translate(0 152)">
+				<g transform="translate(723 48)">
+					<circle class="st26" cx="1042" cy="378" r="15"/>
+					<text transform="matrix(1 0 0 1 1038 384)" class="st1 st4 st18">2</text>
+				</g>
+				<text transform="matrix(1 0 0 1 1804 423)" class="st4 st20">Each card shown here categorizes the payments based on statuses. The status is indicated in the card header and </text>
+				<text transform="matrix(1 0 0 1 1804 449)" class="st4 st20">the payments are listed with recipient name and payment amount below it. Separating the payments into status </text>
+				<text transform="matrix(1 0 0 1 1804 475)" class="st4 st20">cards allows the user to easily view at a glance which payments are successfully sent after their approval and which </text>
+				<text transform="matrix(1 0 0 1 1804 501)" class="st4 st20">may be rejected for various reasons.</text>
+			</g>
+			<g transform="translate(0 171)">
+				<g transform="translate(723 177)">
+					<circle class="st26" cx="1042" cy="378" r="15"/>
+					<text transform="matrix(1 0 0 1 1038 384)" class="st1 st4 st18">3</text>
+				</g>
+				<text transform="matrix(1 0 0 1 1804 552)" class="st4 st20">Payments that are rejected/cancelled will appear on a separate card with an alert banner shown here. This is to call </text>
+				<text transform="matrix(1 0 0 1 1804 578)" class="st4 st20">attention to a rejected payment despite the user having approved the payment. </text>
+				<text transform="matrix(1 0 0 1 1804 630)" class="st4 st20">A payment can be rejected/cancelled for various reasons either by DBank or by Interac. The banner informs the user </text>
+				<text transform="matrix(1 0 0 1 1804 656)" class="st4 st20">they will need to contact DBank for more information on why this payment was not successfully sent to the recipient. </text>
+				<text transform="matrix(1 0 0 1 1804 682)" class="st4 st20">No other action can be taken by user at this time.</text>
+				<text transform="matrix(1 0 0 1 1804 734)" class="st4 st20">Copy on this banner is not final, please refer to MCD for the correct wording.</text>
+			</g>
+		</g>
+		<g transform="translate(0 -8)">
+			<g transform="translate(-452 164)">
+				<circle class="st26" cx="1042" cy="378" r="15"/>
+				<text transform="matrix(1 0 0 1 1038 384)" class="st1 st4 st18">1</text>
+			</g>
+			<g transform="translate(-823 341)">
+				<circle class="st26" cx="1042" cy="378" r="15"/>
+				<text transform="matrix(1 0 0 1 1038 384)" class="st1 st4 st18">2</text>
+			</g>
+			<g transform="translate(-764 738)">
+				<circle class="st26" cx="1042" cy="378" r="15"/>
+				<text transform="matrix(1 0 0 1 1038 384)" class="st1 st4 st18">3</text>
+			</g>
+		</g>
+		<g transform="translate(1401 216)">
+			<g transform="matrix(1, 0, 0, 1, -1401, -216)">
+				<rect x="1401" y="216" class="st1" width="320" height="1298"/>
+			</g>
+			<g transform="translate(-1381 -199)">
+				<g transform="translate(1391 381)">
+					<g transform="translate(0 -1)">
+						<rect class="st1" width="300" height="237"/>
+						<rect x="0.5" y="0.5" class="st12" width="299" height="236"/>
+					</g>
+					<text transform="matrix(1 0 0 1 77.67 62)" class="st3 st4 st20">You have approved 3 </text>
+					<text transform="matrix(1 0 0 1 116.0909 82)" class="st3 st4 st20">payments.</text>
+					<text transform="matrix(1 0 0 1 9.688 130)" class="st13 st4 st20">The status below indicates whether the </text>
+					<text transform="matrix(1 0 0 1 10.579 150)" class="st13 st4 st20">payment has been successfully sent to </text>
+					<text transform="matrix(1 0 0 1 33.723 170)" class="st13 st4 st20">the recipient at this time or if it is </text>
+					<text transform="matrix(1 0 0 1 32.361 190)" class="st13 st4 st20">pending for further authorization.</text>
+				</g>
+			</g>
+			<g transform="translate(0 -912)">
+				<path d="M78.1,2040H242c11.9,0,21.5,9.6,21.5,21.5l0,0c0,11.9-9.6,21.5-21.5,21.5H78.1c-11.9,0-21.5-9.6-21.5-21.5l0,0
+					C56.6,2049.6,66.2,2040,78.1,2040z"/>
+				<text transform="matrix(1 0 0 1 146.094 2065)" class="st1 st4 st10">Done</text>
+			</g>
+			<circle class="st16" cx="160" cy="180" r="24"/>
+			<g>
+				<rect class="st27" width="320" height="44"/>
+				<rect x="0.5" y="0.5" class="st28" width="319" height="43"/>
+			</g>
+			<text transform="matrix(1 0 0 1 123.6949 25.5)" class="st3 st4 st5">[top navigation]</text>
+			<g transform="matrix(1, 0, 0, 1, -1401, -216)">
+				<g transform="translate(1401 260)">
+					<rect class="st11" width="320" height="1254"/>
+					<rect x="0.5" y="0.5" class="st12" width="319" height="1253"/>
+				</g>
+			</g>
+			<g transform="translate(264 95)">
+				<g>
+					<rect class="st1" width="36" height="36"/>
+					<rect x="0.5" y="0.5" class="st12" width="35" height="35"/>
+				</g>
+				<g transform="translate(11.106 10)">
+					<path class="st29" d="M6.1,0C5.8,0,5.5,0.3,5.5,0.7v10.7L1.2,7.1c-0.3-0.3-0.7-0.3-1,0C0.1,7.2,0.1,7.3,0,7.4
+						C0,7.7,0,7.9,0.2,8.1l5.5,5.5c0,0,0.1,0.1,0.1,0.1h0l0.1,0h0c0,0,0.1,0,0.1,0c0,0,0.1,0,0.1,0c0,0,0.1,0,0.1,0c0,0,0.1,0,0.1,0
+						h0l0.1,0h0l0.1-0.1l5.5-5.5c0.3-0.3,0.3-0.7,0-1c-0.3-0.3-0.7-0.3-1,0c0,0,0,0,0,0l-4.3,4.3V0.7C6.8,0.3,6.5,0,6.1,0z"/>
+					<path class="st29" d="M0.7,16.6h10.9c0.4,0,0.7-0.3,0.7-0.7c0,0,0,0,0,0c0-0.4-0.3-0.7-0.7-0.7c0,0,0,0,0,0H0.7
+						c-0.4,0-0.7,0.3-0.7,0.7C0,16.3,0.3,16.6,0.7,16.6C0.7,16.6,0.7,16.6,0.7,16.6z"/>
+				</g>
+			</g>
+			<g transform="translate(-1381 -148)">
+				<g transform="translate(1391 592)">
+					<rect class="st1" width="300" height="349"/>
+					<rect x="0.5" y="0.5" class="st12" width="299" height="348"/>
+				</g>
+				<text transform="matrix(1 0 0 1 1415 631)" class="st3 st4 st20">Payment Successfully Sent</text>
+				<text transform="matrix(1 0 0 1 1415 669)" class="st3 st4 st20">Coca Cola</text>
+				<g transform="translate(0 6)">
+					<text transform="matrix(1 0 0 1 1415 697)" class="st3 st4 st20">$2,234.00</text>
+					<text transform="matrix(1 0 0 1 1415 721)" class="st19 st4 st10">Payment ID: RTRR000ABC0001</text>
+				</g>
+				<text transform="matrix(1 0 0 1 1530.041 759)" class="st4 st10" style="text-decoration: underline;">View Payment Details</text>
+				<path class="st21" d="M1415,784.4l253-1.4"/>
+				<g transform="translate(0 150.422)">
+					<text transform="matrix(1 0 0 1 1415 669)" class="st3 st4 st20">Coca TOR</text>
+					<g transform="translate(0 6)">
+						<text transform="matrix(1 0 0 1 1415 697)" class="st3 st4 st20">$2,234.00</text>
+						<text transform="matrix(1 0 0 1 1415 721)" class="st19 st4 st10">Payment ID: RTRR000ABC0001</text>
+					</g>
+					<text transform="matrix(1 0 0 1 1530.041 759)" class="st4 st10" style="text-decoration: underline;">View Payment Details</text>
+				</g>
+			</g>
+			<g transform="translate(-1381 226)">
+				<text transform="matrix(1 0 0 1 1415 631)" class="st3 st4 st20">Payment Rejected/Cancelled</text>
+				<g transform="translate(0 94.422)">
+					<text transform="matrix(1 0 0 1 1415 669)" class="st3 st4 st20">TDS Logistics</text>
+					<g transform="translate(0 6)">
+						<text transform="matrix(1 0 0 1 1415 697)" class="st3 st4 st20">$2,234.00</text>
+					</g>
+					<text transform="matrix(1 0 0 1 1530.041 738)" class="st4 st10" style="text-decoration: underline;">View Payment Details</text>
+				</g>
+				<g transform="translate(1391 646)">
+					<rect class="st22" width="300" height="86"/>
+					<text transform="matrix(1 0 0 1 56 27)" class="st3 st4 st10">This payment cannot be sent at </text>
+					<text transform="matrix(1 0 0 1 56 44)" class="st3 st4 st10">this time. Please contact DBank for </text>
+					<text transform="matrix(1 0 0 1 56 61)" class="st3 st4 st10">more details.</text>
+					<g transform="translate(16 21)">
+						<rect class="st11" width="24" height="24"/>
+						<g transform="translate(0.522 0.908)">
+							<rect x="1" y="0.6" class="st11" width="21" height="21"/>
+							<g transform="translate(0.978 1.592)">
+								<path class="st24" d="M18.7,19H2.3C1,19,0,17.9,0,16.6c0-0.4,0.1-0.8,0.3-1.2L8.4,1.2C8.8,0.4,9.6,0,10.5,0h0
+									c0.8,0,1.6,0.4,2,1.2l8.2,14.3c0.6,1.1,0.2,2.6-0.9,3.2C19.5,18.9,19.1,19,18.7,19L18.7,19z"/>
+								<g transform="translate(-1.497 -2.345)">
+									<rect x="11" y="15.5" class="st1" width="2" height="1.9"/>
+									<path class="st1" d="M11.3,14.5h1.5l0.3-6.4H11L11.3,14.5z"/>
+								</g>
+							</g>
+						</g>
+					</g>
+					<rect x="16" y="21" class="st11" width="24" height="24"/>
+				</g>
+				<g transform="translate(1391 592)">
+					<rect class="st11" width="300" height="276"/>
+					<rect x="0.5" y="0.5" class="st12" width="299" height="275"/>
+				</g>
+			</g>
+		</g>
+		<g transform="translate(0 15)">
+			<path class="st30" d="M0,71h12457v59H0V71z"/>
+			<text transform="matrix(1 0 0 1 92 107)" class="st1 st31 st32">12.0.2 - Authorizer Payment Confirmation - Approve Multiple Payments</text>
+			<text transform="matrix(1 0 0 1 77 18)" class="st31 st14">Web Business Banking Modernization - Employee UI</text>
+			<text transform="matrix(1 0 0 1 77 40)" class="st31 st20">Detailed Wireframe</text>
+			<g transform="translate(12 2)">
+				<path class="st33" d="M0,43h49V0H0V43z"/>
+				<g>
+					<rect class="st30" width="49" height="43"/>
+					<rect x="0.5" y="0.5" class="st8" width="48" height="42"/>
+				</g>
+				<text transform="matrix(1 0 0 1 6.542 26)" class="st1 st31 st34">DBANK</text>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>
