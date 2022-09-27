@@ -1,13 +1,25 @@
+/* STRUCTURE ====================================*/
+
 html{
-	font-family: 'Cormorant Garamond', serif;
-/*	padding: 1rem 0.5rem 2rem;*/
-/*	max-width: 800px;*/
-/*	margin: auto;*/
-    font-size: 24px;
+	font: 24px 'Cormorant Garamond', serif;
     letter-spacing: .01rem;
     word-break: keep-all;
-/*    background: black;*/
-/*    color: white;*/
+    /*    padding: 1rem 0.5rem 2rem;*/
+    /*    max-width: 800px;*/
+    /*    margin: auto;*/
+    /*    background: black;*/
+    /*    color: white;*/
+}@media only screen and (min-width: 600px) {
+    html{
+        padding: 5rem 0 2rem;
+        font-size: 19px;
+    }
+}@media only screen and (min-width: 1200px) {
+    html{
+        max-width: none;
+        padding: 0;
+        margin: 0;
+    }
 }
 
 body{
@@ -15,39 +27,119 @@ body{
     padding: 0;
 }
 
-.project{
-    padding: 1rem 0.5rem 2rem;
-    max-width: 800px;
-    margin: auto;
+@media only screen and (min-width: 1200px) {
+    .container-full{ padding: 0 0 2rem; }
+    .container-wide{
+        padding: 5rem 0 2rem;
+        width: 1000px;
+        margin: auto;
+    }
+    .container-narrow{
+        padding: 5rem 0 2rem;
+        width: 800px;
+        margin: auto;
+    }
 }
 
-h1, h2{
-    font-weight: lighter;
+.twobytwogrid a{ margin: 1rem;
+}@media only screen and (min-width: 800px) {
+    .twobytwogrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
-h1{
-    margin: 0;
-}
+/* ALIGNMENT & SPACING ====================================*/
 
+.center{ text-align: center; }
+.inline{ display: inline; }
+.resultsCTA{ margin-bottom: 2rem; }
+
+/* TEXT ====================================*/
+
+h1{ margin: 0; }
+h1, h2{ font-weight: lighter; }
 h2{
-    font-size: 1.8rem;
-    line-height: 2.5rem;
+    font: 1.8rem/2.5rem 'Cormorant Garamond', serif;
     margin: 0 0 1rem;
+}@media only screen and (min-width: 475px) {
+    h2{ font-size: 2.5rem; }
+}
+@media only screen and (min-width: 700px) {
+    h2{
+        font: 4rem/3.5rem 'Cormorant Garamond', serif;
+        margin-bottom: 1rem;
+    }
+}
+h3{ font-size: 1.3rem; }
+.subheading{
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+}
+p{ line-height: 1.6rem; }
+b, strong{ font-family: 'Cormorant Garamond SemiBold'; }
+a{ color: black; }
+a:visited{ color: black; }
+.referencetext{
+    color: grey;
+    font-size: 0.7rem;
+    float: right;
+    text-align: right;
+}
+small{
+    color: grey;
+    display: block;
+    letter-spacing: 1.5;
+    max-width:600px;
+    float: right;
+    text-align: right;
+
 }
 
-h3{
-    font-size: 1.3rem;
+/* LISTS ====================================*/
+
+ul{ padding: 0; }
+ul li{ list-style: none; }
+ol li, ul li{ margin-bottom: 1rem; }
+
+.bullets{ padding: revert; }
+.bullets li{ list-style: "\2012  "; }
+
+dt{
+    font-variant: small-caps 0.8rem 'Cormorant Garamond Bold';
+    padding-right: 0.5rem;
 }
 
-p{
-    line-height: 1.6rem;
+@media only screen and (min-width: 700px) {
+    dd{
+        margin-inline-start: 0;
+        margin-bottom: 1rem;
+    }
 }
 
-#about{
-    animation: fadein 2s;
-    position: relative;
-    scroll-snap-type: y mandatory;
+@media only screen and (min-width: 800px) {
+    dl{
+        display: grid;
+        grid-template-columns: max-content auto;
+    }
+    dt{ grid-column-start: 1; }
+    dd{
+        grid-column-start: 2;
+        padding-bottom: 1rem;
+    }
 }
+
+/* MARKS (Highlights) ====================================*/
+
+.mark{ background: linear-gradient(180deg, #fff 60%, #FFDF50 40%); }
+.mark-purple{ background: linear-gradient(180deg, #fff 60%, rgba(195,150,209, 0.7) 40%); }
+.mark-yellow{ background: linear-gradient(180deg, #fff 60%, rgba(246,178,29, 0.7) 40%); }
+.mark-red{ background: linear-gradient(180deg, #fff 60%, rgba(255,70,72, 0.7) 40%); }
+.mark-green{ background: linear-gradient(180deg, #fff 60%, rgba(81,176,67, 0.7) 40%); }
+.mark-blue{ background: linear-gradient(180deg, #fff 60%, rgba(50,180,255, 0.7) 40%); }
+
+/* EFFECTS ====================================*/
 
 @keyframes fadein {
     from { opacity: 0; }
@@ -59,88 +151,39 @@ p{
   opacity: 1;
 }
 
-.right{
-    text-align: right;
+@keyframes float {
+  0% { transform: translatey(0px); }
+  50% { transform: translatey(-20px); }
+  100% { transform: translatey(0px); }
 }
 
-.challenge-title{
-    font-variant: all-petite-caps;
-    font-family: 'Cormorant Garamond Bold';
+.reveal{
+    position: relative;
+    transform: translatey(150px);
+    opacity: 0;
+    transition: all 2s ease
+}
+.reveal.active{
+    transform: translatey(0px);
+    opacity: 1;
 }
 
-.project-highlight h3{
-    margin: 0;
-}
-
-.project-highlight p{
-    margin: 1rem 0;
-}
-
-.project-highlight img{
-    padding-bottom: 0.5rem;
-}
-
-.intro-component{
-    display: flex;
-    min-height: 80vh;
-}
-
-.intro-component img{
-    max-width: 35%;
-    object-fit: cover;
-/*    border-radius: 50px;*/
-    padding: 0 1rem 3rem;
-}
-
-.intro-component h2{
-    text-align: right;
-    margin-bottom: 0;
-}
-
-.intro-component h2 .emphasis{
-    display: none;
-}
-
-.intro-component-emphasis{
-    display: block;
-    text-align: right;
-    font-style: italic;
-    margin: 0;
-}
-
-
-.intro-component-description{
-    text-align: center;
-}
-
-.intro-component-large{
-    font-size: 1.5rem;
-}
-
-.center{
-    text-align: center;
-}
-
-strong{
-    font-family: 'Cormorant Garamond SemiBold';
-}
-
-.flex-horizontal{
-    display: flex;
-}
-
+/* NAVIGATION ====================================*/
 nav{
     background: white;
     z-index: 1000;
     width: 100%;
     padding: 0 1rem;
 }
+nav a, #projects a{ text-decoration: none; }
 
 #navbar {
     position: fixed;
-    top: 0; /* Stay on top */
+    top: 0;
     left: 0;
     transition: top 1s; /* Transition effect when sliding down (and up) */
+}@media only screen and (min-width: 475px) {
+    #navbar { left: 1rem; }
 }
 #navbar li{
     list-style: none;
@@ -148,46 +191,77 @@ nav{
     margin: 0 .6rem 0 0;
     line-height: 2rem;
 }
+#navbar li a{ font-size: 0.7rem;
+}@media only screen and (min-width: 600px) {
+    #navbar li a{ font-size: 1rem; }
+}
+#navbar a:hover{ background: linear-gradient(180deg, #fff 60%, rgba(246,178,29, 0.7) 40%); }
+#navbar a>h1:hover{ background: linear-gradient(180deg, #fff 60%, rgba(246,178,29, 0.7) 40%); }
 
-#navbar li a{
-    font-size: 0.7rem;
+/* COMPONENTS: GLOBAL ====================================*/
+
+#about{
+    animation: fadein 2s;
+    position: relative;
+    scroll-snap-type: y mandatory;
 }
 
-ul{
-    padding: 0;
+article{ transition: 0.3s ease-in-out; }
+article:hover{
+    margin-top:-3px;
+    margin-left:-3px;
+    margin-right: 3px;
+}
+article h3::before{
+    content: "case study";
+    display: block;
+    font: small-caps 0.8rem 'Cormorant Garamond', serif;
+    margin-bottom: 0.5rem;
+}@media only screen and (min-width: 600px) {
+    article h3::before{ margin-bottom: 0.3rem; }
+}
+article.green:hover, article.green:active, article.green:focus{ background: honeydew; }
+article.purple:hover, article.purple:active, article.purple:focus{ background: lavender; }
+article.red:hover, article.red:active, article.red:focus{ background: mistyrose; }
+article.yellow:hover, article.yellow:active, article.yellow:focus{ background: lightgoldenrodyellow; }
+article.blue:hover, article.blue:active, article.blue:focus{ background: azure; }
+
+.block{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-ul li{
-    list-style: none;
+.bordercomponent{
+    border-left: 4px solid ghostwhite;
+    padding: 0 1rem 0.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: black -3px 0;
+}
+.bordercomponent p{ margin: 0; padding: 0; }
+.bordercomponent small{ margin-bottom: 0; }
+
+.card{
+    padding: 1rem 2rem;
+    box-shadow: 4px 4px 10px lightgrey;
+    box-sizing: border-box;
 }
 
-ol li, ul li{
-	margin-bottom: 1rem;
+.challenge-title{ font: all-petite-caps 1rem 'Cormorant Garamond Bold'; }
+
+.cover-image{
+    max-height:50vh;
+    object-fit: cover;
 }
 
-.resultsCTA{
-    margin-bottom: 2rem;
+.CTA{
+    font-size: 2rem;
+    float: right;
 }
 
-a {
-    color: black;
-}
-
-nav a, #projects a{
-	text-decoration: none;
-}
-
-#navbar a:hover{
-    background: linear-gradient(180deg, #fff 60%, rgba(246,178,29, 0.7) 40%);
-}
-
-#navbar a>h1:hover{
-    background: linear-gradient(180deg, #fff 60%, rgba(246,178,29, 0.7) 40%);
-}
-
-#projects a:hover, .link{
-	text-decoration: underline;
-}
+.description{ font: 2rem/3rem 'Cormorant Garamond', serif; }
 
 details {
     margin-bottom: 0.5rem;
@@ -198,32 +272,100 @@ details {
     padding: 0 0.5rem;
     background: white;
 }
+details #text { content: "see other projects"; }
+details[open] #text { content: "hide other projects"; }
+details[open] > summary:before { transform: rotate(90deg);}
 
-summary {
+footer{
+    margin: 10rem 1rem 2rem;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    padding-bottom: 1.3rem;
+}
+
+#projects a:hover, .link{ text-decoration: underline; }
+#projects h2{ color: transparent;}
+
+.project-image{ padding-bottom:.3rem; }
+.project-highlight-photo{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+.project-highlight h3{ margin: 0; }
+.project-highlight p{ margin: 1rem 0; }
+.project-highlight img{ padding-bottom: 0.5rem; }
+.project-highlight:hover .mark-purple{ background: linear-gradient(180deg, lavender 60%, rgba(195,150,209, 0.7) 40%); }
+.project-highlight:hover .mark-green{ background: linear-gradient(180deg, honeydew 60%, rgba(81,176,67, 0.7) 40%); }
+.project-highlight:hover .mark-yellow{ background: linear-gradient(180deg, lightgoldenrodyellow 60%, rgba(246,178,29, 0.7) 40%); }
+.project-highlight:hover .mark-red{ background: linear-gradient(180deg, mistyrose 60%, rgba(255,70,72, 0.7) 40%); }
+.project-highlight:hover .mark-blue{ background: linear-gradient(180deg, azure 60%, rgba(50,180,255, 0.7) 40%); }
+
+.role{
+    display: block;
+    margin: 0;
+    font-style: italic;
+}
+.role:before{ content: "as a "; }
+
+.secondaryinfo{
+     letter-spacing: .05rem;
+     font-size: .9rem;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     gap: 1rem;
+}
+.secondaryinfo-block{
+    width: 100%;
+    text-align: center;
+}
+.secondaryinfo-block-skills{
+    background: #2f2f2f;
+    color: white;
+}
+.secondaryinfo-block-edu{ background: lavender;}
+.secondaryinfo-block-tools{ background: mintcream; }
+.secondaryinfo-block h3{
+    padding: 1rem 1rem;
+    margin: 0;
+    font-size: 1.6rem;
+}
+.secondaryinfo-block-content{ padding: 1rem; }
+.secondaryinfo-block-content img{
+        padding: 0;
+        max-width: 120px;
+}
+@media only screen and (min-width: 475px) {
+    .secondaryinfo{
+         flex-direction: row;
+         flex-wrap: wrap;
+    }
+    .secondaryinfo-block{ width:46%; }
+    .secondaryinfo-block:nth-child(3){ width:100%; }
+}@media only screen and (min-width: 800px) {
+    .secondaryinfo{
+         flex-direction: row;
+         flex-wrap: nowrap;
+         align-items: stretch;
+    }
+    .secondaryinfo-block{ width:33%; }
+    .secondaryinfo-block:nth-child(3){ width:33%; }
+}
+
+summary{
   padding: 1rem;
   display: block;
   padding-left: 2.2rem;
   position: relative;
   cursor: pointer;
 }
-
-
-details[open] > summary:before {
-  transform: rotate(90deg);
-}
-
-details #text {
-    content: "see other projects";
-}
-
-details[open] #text {
-    content: "hide other projects";
-}
-summary:before {
+summary:before{
   content: '';
-  border-width: .4rem;
-  border-style: solid;
-  border-color: transparent transparent transparent black;
+  border: .4rem solid transparent transparent transparent black;
   position: absolute;
   top: 1.3rem;
   left: 1rem;
@@ -232,30 +374,26 @@ summary:before {
   transition: .25s transform ease;
 }
 
-a:visited{
-    color: black;
+/* COMPONENTS: HOMEPAGE ====================================*/
+
+.brand-images{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+}@media only screen and (min-width: 475px) {
+    .brand-images{ grid-template-columns: auto auto auto; }
 }
 
-article{
-    transition: 0.3s ease-in-out;
-}
-
-.card{
-    padding: 1rem 2rem;
-    box-shadow: 4px 4px 10px lightgrey;
+.brand-images img{
+    height: 120px;
+    padding: 1rem;
+    object-fit: contain;
     box-sizing: border-box;
-}
-
-article h3::before{
-    content: "case study";
-    display: block;
-    font-size: .8rem;
-    font-variant: small-caps;
-    margin-bottom: 0.5rem;
-}
-
-.indent{
-    margin-left: 2rem;
+}@media only screen and (min-width: 800px) {
+    .brand-images img{
+        height: 7rem;
+        padding: 1.8rem;
+    }
 }
 
 .chat-link{
@@ -271,34 +409,23 @@ article h3::before{
     margin: 0;
     border-radius: 2.5rem;
     display: block;
+}@media only screen and (min-width: 475px) {
+    .chat-link{ padding: 40px 80px; }
+}@media only screen and (min-width: 600px) {
+    .chat-link {
+        font-size: 1.5rem;
+        margin: 1rem 0;
+    }
 }
-
-.chat-link:nth-child(2){
-    float: right;
-}
-
-.chat-link:nth-child(odd){
-    background-color: #6372FF;
-    margin: 1rem;
-    float: left;
-}
-
+.chat-link:hover{ background: darkslategray; }
 .chat-link:before {
     content: "";
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0;
     position: absolute;
-  }
-
-.chat-link:nth-child(odd):before {
-    border-top: 10px solid #6372FF;
-    border-right: 10px solid #6372FF;
-    border-bottom: 10px solid transparent;
-    border-left: 10px solid transparent;
-    left: -15px;
-    top: 40px;
 }
 
+.chat-link:nth-child(2){ float: right; }
 .chat-link:nth-child(2):before {
     border-top: 10px solid transparent;
     border-right: 10px solid #0051C2;
@@ -307,21 +434,6 @@ article h3::before{
     left: -15px;
     top: 40px;
 }
-
-
-.chat-link:hover{
-    background: darkslategray;
-}
-
-.chat-link:nth-child(odd):hover:before {
-    border-top: 10px solid darkslategray;
-    border-right: 10px solid darkslategray;
-    border-bottom: 10px solid transparent;
-    border-left: 10px solid transparent;
-    left: -15px;
-    top: 40px;
-}
-
 .chat-link:nth-child(2):hover:before {
     border-top: 10px solid transparent;
     border-right: 10px solid darkslategray;
@@ -331,539 +443,140 @@ article h3::before{
     top: 40px;
 }
 
-
-
-@keyframes float {
-  0% {
-    transform: translatey(0px);
-  }
-  50% {
-    transform: translatey(-20px);
-  }
-  100% {
-    transform: translatey(0px);
-  }
-}
-
-.topmargin4{
-    margin-top: 4rem;
-}
-article:hover{
-    margin-top:-3px;
-    margin-left:-3px;
-    margin-right: 3px;
-}
-
-article.green:hover, article.green:active, article.green:focus{
-    background: honeydew;
-/*    box-shadow: 20px 20px honeydew;*/
-
-}
-
-article.purple:hover, article.purple:active, article.purple:focus{
-    background: lavender;
-/*    box-shadow: 20px 20px lavender;*/
-}
-
-article.red:hover, article.red:active, article.red:focus{
-    background: MistyRose;
-/*    box-shadow: 20px 20px MistyRose;*/
-}
-
-article.yellow:hover, article.yellow:active, article.yellow:focus{
-    background: LightGoldenRodYellow;
-/*    box-shadow: 20px 20px lightgoldenrodyellow;*/
-
-}
-
-article.blue:hover, article.blue:active, article.blue:focus{
-    background: azure;
-}
-
-.block{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.secondaryinfo{
-     letter-spacing: .05rem;
-     font-size: .9rem;
-     display: flex;
-     flex-direction: column;
-     align-items: flex-start;
-     gap: 1rem;
-}
-
-.secondaryinfo-block{
-    width: 100%;
-    text-align: center;
-}
-
-.secondaryinfo-block-skills{
-    background: #2f2f2f;
-    color: white;
-}
-
-.secondaryinfo-block-edu{
-    background: lavender;
-}
-
-.secondaryinfo-block-tools{
-    background: mintcream;
-}
-
-.secondaryinfo-block h3{
-    padding: 1rem 1rem;
-    margin: 0;
-    font-size: 1.6rem;
-}
-
-.secondaryinfo-block-content{
-    padding: 1rem;
-}
-
-.secondaryinfo-block-content img{
-        padding: 0;
-        max-width: 120px;
-        
-}
-
-.twobytwogrid a{
+.chat-link:nth-child(odd){
+    background-color: #6372FF;
     margin: 1rem;
+    float: left;
 }
+.chat-link:nth-child(odd):before {
+    border-top: 10px solid #6372FF;
+    border-right: 10px solid #6372FF;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    left: -15px;
+    top: 40px;
+}
+.chat-link:nth-child(odd):hover:before {
+    border-top: 10px solid darkslategray;
+    border-right: 10px solid darkslategray;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    left: -15px;
+    top: 40px;
+}
+@media only screen and (min-width: 475px) {
+    .chat-link:nth-child(odd){ left: 20%; }
+    .chat-link:nth-child(2){
+        left: 50%;
+        float: none;
+    }
+}
+
+.intro-component{
+    display: flex;
+    min-height: 80vh;
+    text-align: right;
+}
+.intro-component img{
+    max-width: 35%;
+    object-fit: cover;
+    padding: 0 1rem 3rem;
+}
+.intro-component h2{
+    text-align: right;
+    margin-bottom: 0;
+}@media only screen and (min-width: 1200px) {
+    .intro-component h2{
+        width: 60%;
+        font: 4vw/4.5vw 'Cormorant Garamond', serif;
+        display: inline;
+    }
+}
+.intro-component h2 .emphasis{
+    display: none;
+}@media only screen and (min-width: 1500px) {
+    .intro-component h2 .emphasis{
+        display: inline;
+        font: italic 1.5vw/0 'Cormorant Garamond', serif;
+        /* content: "an Accenture + Microsoft venture";*/
+    }
+}
+.intro-component-description{ text-align: center; }
+.intro-component-large{ font-size: 1.5rem; }
+.intro-component-emphasis{
+    display: block;
+    text-align: right;
+    font-style: italic;
+    margin: 0;
+}@media only screen and (min-width: 1500px) {
+    .intro-component-emphasis{ display: none; }
+}
+
 
 .funinfo-block{
     display: flex;
     flex-direction: column;
     align-content: flex-start;
+}@media only screen and (min-width: 800px) {
+    .funinfo-block{ flex-direction: row; }
 }
-.funinfo-block img{
-    object-fit: contain;
-}
+.funinfo-block img{ object-fit: contain;}
+.funinfo-block img:nth-child(1){ order: 0; }
+.funinfo-block img:nth-child(3){ order: 2; }
+.funinfo-block-text { order: 1; }
 
-.funinfo-block-text {
-    order: 1;
+@media only screen and (min-width: 600px) {
+    .other-projects{ padding-left: 1rem; }
+}@media only screen and (min-width: 800px) {
+    .other-projects{ max-width: 950px; }
 }
-.funinfo-block img:nth-child(1){
-    order: 0;
-}
-.funinfo-block img:nth-child(3){
-    order: 2;
-}
-
-.inline{
-    display: inline;
-}
-
-mark{
-    background-color: clear;
-}
-
-.mark{
-    background: linear-gradient(180deg, #fff 60%, #FFDF50 40%);
-}
-
-.mark-purple{
-    background: linear-gradient(180deg, #fff 60%, rgba(195,150,209, 0.7) 40%);
-}
-.mark-yellow{
-    background: linear-gradient(180deg, #fff 60%, rgba(246,178,29, 0.7) 40%);
-}
-.mark-red{
-    background: linear-gradient(180deg, #fff 60%, rgba(255,70,72, 0.7) 40%);
-}
-.mark-green{
-    background: linear-gradient(180deg, #fff 60%, rgba(81,176,67, 0.7) 40%);
-}
-.mark-blue{
-    background: linear-gradient(180deg, #fff 60%, rgba(50,180,255, 0.7) 40%);
-}
-
-
-.project-highlight:hover .mark-purple{
-    background: linear-gradient(180deg, lavender 60%, rgba(195,150,209, 0.7) 40%);
-}
-
-.project-highlight:hover .mark-green{
-    background: linear-gradient(180deg, honeydew 60%, rgba(81,176,67, 0.7) 40%);
-}
-
-.project-highlight:hover .mark-yellow{
-    background: linear-gradient(180deg, LightGoldenRodYellow 60%, rgba(246,178,29, 0.7) 40%);
-}
-
-.project-highlight:hover .mark-red{
-    background: linear-gradient(180deg, MistyRose 60%, rgba(255,70,72, 0.7) 40%);
-}
-
-.project-highlight:hover .mark-blue{
-    background: linear-gradient(180deg, Azure 60%, rgba(50,180,255, 0.7) 40%);
-}
-
+.other-projects p{ font-family: 'Cormorant Garamond Bold'; }
+.other-projects p em{ font-weight: normal; }
 
 #skillstools, .funinfo, #chat{
     margin-top: 6rem;
 }
 
-#projects h2{
-    color: transparent;
-}
 
-.projects-details{
-    padding: 1rem;
-    margin: 0;
-    text-align: center;
-}
 
-footer{
-    margin: 10rem 1rem 2rem;
-    text-align: center;
-}
 
-.other-projects p{
-    font-family: 'Cormorant Garamond Bold';
-}
-.other-projects p em{
-    font-weight: normal;
-}
 
-img{
-    width: 100%;
-    padding-bottom: 1.3rem;
-}
+/*================== !!! TESTING WITH EMPTY PROJECT !!! ==================*/
 
-.highlight-photo{
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
-}
+.discover { }
+.define { transform: rotate(180deg); }
+.design {}
+.develop { transform: rotate(180deg); }
 
-.brand-images{
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-items: center;
-}
-
-.brand-images img{
-    height: 120px;
-    padding: 1rem;
-    object-fit: contain;
-    box-sizing: border-box;
-}
-/*project details*/
-
-dt{
-    font-size: 0.8rem;
-    font-variant: small-caps;
-    font-family: 'Cormorant Garamond Bold';
-    padding-right: 0.5rem;
-}
-
-.role{
-    display: block;
-    margin: 0;
-    font-style: italic;
-}
-
-.description{
-    font-size: 2rem;
-    line-height: 3rem;
-}
-
-.role:before{
-    content: "as a ";
-}
-.CTA{
-    font-size: 2rem;
-    float: right;
-}
-.bullets{
-    padding: revert;
-}
-
-.bullets li{
-/*    list-style: disc;*/
-    list-style: "\2012  ";
-}
-small{
-    font-style: italic;
-    margin-left: 1rem;
-    display: block;
-    margin-bottom: 2rem;
-}
-
-.project-image{
-    padding-bottom:.3rem;
-}
-
-.cover-image{
-    max-height:50vh;
-    object-fit: cover;
-}
-
-.right{
-    float: right;
-}
-
-.lighter{
-    color: light-grey;
-    font-size: 0.7rem;
-}
-/*END project details*/
-
-.design-process>div{
-    position: relative;
-}
+.design-process>div{ position: relative; }
 .design-process img{
     margin:0;
     padding:0;
     content: url("process-mobile.svg");
 }
-
 .design-process .text{
     text-align: center;
     position: absolute;
     top: 40%;
-    font-family: 'Cormorant Garamond Bold';
-    font-variant: small-caps;
-    font-size:1.2rem;
+    font: small-caps 1.2rem 'Cormorant Garamond Bold';
 }
+.design-process .no{ opacity: 0.3; filter: grayscale(100%); }
+.design-process .no .text{ font-size:1rem; }
 
-.design-process .no{
-    opacity: 0.3;
-    filter: grayscale(100%);
-}
-
-.design-process .no .text{
-    font-size:1rem;
-}
-
-.discover {
-
-}
-.define {
-    transform: rotate(180deg);
-}
-.design {
-}
-.develop {
-    transform: rotate(180deg);
-}
-
-.bordercomponent{
-    border-left: 4px solid ghostwhite;
-    padding: 0 1rem 0.5rem;
-    margin-bottom: 1.5rem;
-    box-shadow: black -3px 0px
-}
-
-.bordercomponent p{
-    margin: 0;
-    padding: 0;
-}
-.bordercomponent small{
-    margin-bottom: 0;
-}
-
-.reveal{
-        position: relative;
-        transform: translatey(150px);
-        opacity: 0;
-        transition: all 2s ease
-}
-
-.reveal.active{
-    transform: translatey(0px);
-    opacity: 1;
-}
 @media only screen and (min-width: 600px) {
-    
-    html{
-        padding: 5rem 0rem 2rem;
-        font-size: 19px;
+        .design-process{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
     }
-    
     .design-process .text{
         text-align: center;
         position: absolute;
         top: 40%;
         left: 35%;
-        font-family: 'Cormorant Garamond Bold';
-        font-variant: small-caps;
-        font-size:1.2rem;
+        font: small-caps 1.2rem 'Cormorant Garamond Bold';
     }
-    
-    .design-process{
-        display: grid;
-        grid-template-columns: auto auto auto auto auto;
-    }
-    .design-process img{
-        content: url("process.svg");
-    }
-    
-    .other-projects{
-        padding-left: 1rem;
-    }
-    .chat-link {
-        font-size: 1.5rem;
-        margin: 1rem 0;
-    }
-    
-    article h3::before{
-        margin-bottom: 0.3rem;
-    }
-
+    .design-process img{ content: url("process.svg"); }
 }
-@media only screen and (min-width: 475px) {
-    h2{
-        font-size: 2.5rem;
-    }
-    
-    .secondaryinfo{
-         flex-direction: row;
-         flex-wrap: wrap;
-    }
-    .secondaryinfo-block{
-        width:46%;
-    }
-    .secondaryinfo-block:nth-child(3){
-        width:100%;
-    }
-    .brand-images{
-        grid-template-columns: auto auto auto;
-    }
-    
-    #navbar {
-        left: 1rem;
-    }
-    
-    .chat-link{
-        padding: 40px 80px;
-    }
-    
-    .chat-link:nth-child(2){
-        left: 50%;
-        float: none;
-    }
-
-    .chat-link:nth-child(odd){
-        left: 20%;
-    }
-}
-
-@media only screen and (min-width: 600px) {
-    #navbar li a{
-        font-size: 1rem;
-    }
-}
-@media only screen and (min-width: 700px) {
-    h2{
-        font-size: 4rem;
-        line-height: 3.5rem;
-        margin-bottom: 1rem;
-    }
+/*================== end: !!! TESTING WITH EMPTY PROJECT !!! ==================*/
 
 
-    dd{
-        margin-inline-start: 0;
-        margin-bottom: 1rem;
-    }
-}
-
-@media only screen and (min-width: 800px) {
-    
-    dl{
-        display: grid;
-        grid-template-columns: max-content auto;
-    }
-
-    dt{
-        grid-column-start: 1;
-    }
-
-    dd{
-        grid-column-start: 2;
-        padding-bottom: 1rem;
-    }
-    
-    .secondaryinfo{
-         flex-direction: row;
-         flex-wrap: nowrap;
-         align-items: stretch;
-    }
-    .secondaryinfo-block{
-        width:33%;
-    }
-    
-    .secondaryinfo-block:nth-child(3){
-        width:33%;
-    }
-    
-    .funinfo-block{
-        flex-direction: row;
-    }
-    
-    .brand-images img{
-        height: 7rem;
-        padding: 1.8rem;
-    }
-    
-    .twobytwogrid{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    
-    .other-projects{
-        max-width: 950px;
-    }
-}
-
-@media only screen and (min-width: 1000px) {
-/*    .brand-images{*/
-/*        grid-template-columns: auto auto auto auto auto auto auto auto auto;*/
-/*    }*/
-}
-@media only screen and (min-width: 1200px) {
-    .intro-component h2{
-        width: 60%;
-        font-size: 4vw;
-        line-height: 4.5vw;
-        display: inline;
-    }
-    
-    html{
-        max-width: none;
-        padding: 0;
-        margin: 0;
-    }
-    
-    .wide-content{
-        padding: 5rem 0rem 2rem;
-        width: 1000px;
-        margin: auto;
-    }
-    
-    .full-content{
-        padding: 0rem 0rem 2rem;
-    }
-    
-    .narrow-content{
-        padding: 5rem 0rem 2rem;
-        width: 800px;
-        margin: auto;
-    }
-}
-@media only screen and (min-width: 1500px) {
-    .intro-component h2 .emphasis{
-        display: inline;
-        font-size: 1.5vw;
-        line-height: 0;
-        font-style: italic;
-/*        content: "an Accenture + Microsoft venture";*/
-    }
-    .intro-component-emphasis{
-        display: none;
-    }
-}
