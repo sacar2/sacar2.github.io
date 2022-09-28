@@ -263,7 +263,7 @@ details {
 }
 details #text { content: "see other projects"; }
 details[open] #text { content: "hide other projects"; }
-details[open] > summary:before { transform: rotate(90deg);}
+details[open] > summary:before { transform: rotate(45deg);}
 
 footer{
     margin: 10rem 1rem 2rem;
@@ -363,7 +363,8 @@ summary{
 }
 summary:before{
   content: '';
-  border: .4rem solid transparent transparent transparent black;
+/*  border: .4rem solid transparent transparent transparent black;*/
+  border: .4rem solid black;
   position: absolute;
   top: 1.3rem;
   left: 1rem;
@@ -415,32 +416,12 @@ summary:before{
         margin: 1rem 0;
     }
 }
-.chat-link:hover{ background: darkslategray; }
 .chat-link:before {
     content: "";
     width: 0;
     height: 0;
     position: absolute;
 }
-
-.chat-link:nth-child(2){ float: right; }
-.chat-link:nth-child(2):before {
-    border-top: 10px solid transparent;
-    border-right: 10px solid #0051C2;
-    border-bottom: 10px solid #0051C2;
-    border-left: 10px solid transparent;
-    left: -15px;
-    top: 40px;
-}
-.chat-link:nth-child(2):hover:before {
-    border-top: 10px solid transparent;
-    border-right: 10px solid darkslategray;
-    border-bottom: 10px solid darkslategray;
-    border-left: 10px solid transparent;
-    left: -15px;
-    top: 40px;
-}
-
 .chat-link:nth-child(odd){
     background-color: #6372FF;
     margin: 1rem;
@@ -454,6 +435,20 @@ summary:before{
     left: -15px;
     top: 40px;
 }
+.chat-link:nth-child(2){ float: right; }
+.chat-link:nth-child(2):before {
+    border-top: 10px solid transparent;
+    border-right: 10px solid #0051C2;
+    border-bottom: 10px solid #0051C2;
+    border-left: 10px solid transparent;
+    left: -15px;
+    top: 40px;
+}
+@media only screen and (min-width: 475px) {
+    .chat-link:nth-child(odd){ left: 20%; }
+    .chat-link:nth-child(2){ left: 50%; float: none; }
+}
+
 .chat-link:nth-child(odd):hover:before {
     border-top: 10px solid darkslategray;
     border-right: 10px solid darkslategray;
@@ -462,13 +457,15 @@ summary:before{
     left: -15px;
     top: 40px;
 }
-@media only screen and (min-width: 475px) {
-    .chat-link:nth-child(odd){ left: 20%; }
-    .chat-link:nth-child(2){
-        left: 50%;
-        float: none;
-    }
+.chat-link:nth-child(2):hover:before {
+    border-top: 10px solid transparent;
+    border-right: 10px solid darkslategray;
+    border-bottom: 10px solid darkslategray;
+    border-left: 10px solid transparent;
+    left: -15px;
+    top: 40px;
 }
+.chat-link:hover{ background: darkslategray; }
 
 .intro-component{
     display: flex;
@@ -490,8 +487,8 @@ summary:before{
         display: inline;
     }
 }
-.intro-component-description{ text-align: center; }
-.intro-component-large{ font-size: 1.5rem; }
+.intro-component-description{ text-align: center; font-size: 1.5rem;}
+.intro-component-large{ font-size: 2.4rem; }
 .intro-component-emphasis{
     display: block;
     text-align: right;
