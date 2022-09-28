@@ -1,17 +1,13 @@
 /* STRUCTURE ====================================*/
 
 html{
-	font: 24px 'Cormorant Garamond', serif;
+    font: 20px 'Cormorant Garamond', serif;
     letter-spacing: .01rem;
     word-break: keep-all;
-    /*    padding: 1rem 0.5rem 2rem;*/
-    /*    max-width: 800px;*/
-    /*    margin: auto;*/
-    /*    background: black;*/
-    /*    color: white;*/
+    line-height: 1.6;
 }@media only screen and (min-width: 600px) {
     html{
-        padding: 5rem 0 2rem;
+        padding: 2rem 0 2rem;
         font-size: 19px;
     }
 }@media only screen and (min-width: 1200px) {
@@ -21,21 +17,22 @@ html{
         margin: 0;
     }
 }
+@media only screen and (min-width: 700px) { font: 24px 'Cormorant Garamond', serif; }
 
 body{
-    margin: 5rem 1rem 0;
+    margin: 2rem 1rem 0;
     padding: 0;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1000px) {
     .container-full{ padding: 0 0 2rem; }
     .container-wide{
-        padding: 5rem 0 2rem;
+        padding: 1rem 0;
         width: 1000px;
         margin: auto;
     }
     .container-narrow{
-        padding: 5rem 0 2rem;
+        padding: 1rem 0;
         width: 800px;
         margin: auto;
     }
@@ -58,20 +55,11 @@ body{
 /* TEXT ====================================*/
 
 h1{ margin: 0; }
-h1, h2{ font-weight: lighter; }
-h2{
-    font: 1.8rem/2.5rem 'Cormorant Garamond', serif;
-    margin: 0 0 1rem;
-}@media only screen and (min-width: 475px) {
-    h2{ font-size: 2.5rem; }
-}
-@media only screen and (min-width: 700px) {
-    h2{
-        font: 4rem/3.5rem 'Cormorant Garamond', serif;
-        margin-bottom: 1rem;
-    }
-}
-h3{ font-size: 1.3rem; }
+h1{ font-weight: lighter; }
+h2{ font: 4.209rem/4.5rem 'Cormorant Garamond', serif; margin-bottom: 1rem; }
+h3{ font: 2.441rem/3.5rem 'Cormorant Garamond', serif; margin: 1rem 0 .3rem;}
+h4{ font: 1.953rem/2.0rem 'Cormorant Garamond', serif; margin: 1rem 0 .3rem;}
+
 .subheading{
     padding: 1rem;
     margin: 0;
@@ -101,7 +89,7 @@ small{
 
 ul{ padding: 0; }
 ul li{ list-style: none; }
-ol li, ul li{ margin-bottom: 1rem; }
+ol li, ul li{ margin-bottom: .6rem; }
 
 .bullets{ padding: revert; }
 .bullets li{ list-style: "\2012  "; }
@@ -234,22 +222,22 @@ article.blue:hover, article.blue:active, article.blue:focus{ background: azure; 
     flex-direction: column;
 }
 
-.bordercomponent{
-    border-left: 4px solid ghostwhite;
-    padding: 0 1rem 0.5rem;
-    margin-bottom: 1.5rem;
-    box-shadow: black -3px 0;
-}
-.bordercomponent p{ margin: 0; padding: 0; }
-.bordercomponent small{ margin-bottom: 0; }
-
 .card{
     padding: 1rem 2rem;
     box-shadow: 4px 4px 10px lightgrey;
     box-sizing: border-box;
 }
 
-.challenge-title{ font: all-petite-caps 1rem 'Cormorant Garamond Bold'; }
+.challenge{
+    padding: 1rem 2rem;
+    border-left: 6px solid gray;
+    box-shadow: 4px 4px 10px lightgrey;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    border-radius: 5px 0 0 5px;
+    background: #fefefe;
+}
+.challenge h4{ font: small-caps 1rem 'Cormorant Garamond Bold'; margin: 0;}
 
 .cover-image{
     max-height:50vh;
@@ -284,6 +272,15 @@ footer{
 img{
     width: 100%;
     padding-bottom: 1.3rem;
+}
+
+.learning{
+    padding: .5rem 2rem;
+    border-left: 6px solid #FFDF50;
+    box-shadow: 4px 4px 10px lightgrey;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+    border-radius: 5px 0 0 5px;
 }
 
 #projects a:hover, .link{ text-decoration: underline; }
