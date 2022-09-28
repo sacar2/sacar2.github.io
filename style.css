@@ -263,7 +263,7 @@ details {
 }
 details #text { content: "see other projects"; }
 details[open] #text { content: "hide other projects"; }
-details[open] > summary:before { transform: rotate(45deg);}
+details[open] > summary:before { transform: rotate(90deg);}
 
 footer{
     margin: 10rem 1rem 2rem;
@@ -363,8 +363,9 @@ summary{
 }
 summary:before{
   content: '';
-/*  border: .4rem solid transparent transparent transparent black;*/
-  border: .4rem solid black;
+  border-width: .4rem;
+  border-style: solid;
+  border-color: transparent transparent transparent black;
   position: absolute;
   top: 1.3rem;
   left: 1rem;
