@@ -65,6 +65,9 @@ h4{ font: 1.953rem/2.0rem 'Cormorant Garamond', serif; margin: 1rem 0 .3rem;}
     margin: 0;
     text-align: center;
 }
+
+.description{ font: 2rem/3rem 'Cormorant Garamond', serif; }
+
 p{ line-height: 1.6rem; }
 b, strong{ font-family: 'Cormorant Garamond SemiBold'; }
 a{ color: black; }
@@ -179,7 +182,7 @@ nav a, #projects a{ text-decoration: none; }
     margin: 0 .6rem 0 0;
     line-height: 2rem;
 }
-#navbar li a{ font-size: 0.7rem;
+#navbar li a{ font-size: 0.8rem;
 }@media only screen and (min-width: 600px) {
     #navbar li a{ font-size: 1rem; }
 }
@@ -249,8 +252,6 @@ article.blue:hover, article.blue:active, article.blue:focus{ background: azure; 
     float: right;
 }
 
-.description{ font: 2rem/3rem 'Cormorant Garamond', serif; }
-
 details {
     margin-bottom: 0.5rem;
     overflow: hidden;
@@ -309,8 +310,8 @@ img{
 .role:before{ content: "as a "; }
 
 .secondaryinfo{
-     letter-spacing: .05rem;
-     font-size: .9rem;
+     letter-spacing: 0.05rem;
+     font-size: 0.9rem;
      display: flex;
      flex-direction: column;
      align-items: flex-start;
@@ -489,15 +490,6 @@ summary:before{
         display: inline;
     }
 }
-.intro-component h2 .emphasis{
-    display: none;
-}@media only screen and (min-width: 1500px) {
-    .intro-component h2 .emphasis{
-        display: inline;
-        font: italic 1.5vw/0 'Cormorant Garamond', serif;
-        /* content: "an Accenture + Microsoft venture";*/
-    }
-}
 .intro-component-description{ text-align: center; }
 .intro-component-large{ font-size: 1.5rem; }
 .intro-component-emphasis{
@@ -506,9 +498,7 @@ summary:before{
     font-style: italic;
     margin: 0;
 }@media only screen and (min-width: 1500px) {
-    .intro-component-emphasis{ display: none; }
 }
-
 
 .funinfo-block{
     display: flex;
