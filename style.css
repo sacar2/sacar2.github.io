@@ -75,8 +75,9 @@ h4{ font: 1.3em/1em 'Cormorant Garamond', serif; margin: 1rem 0 .3rem;}
 
 .description{ font: 2rem/3rem 'Cormorant Garamond', serif; }
 
-p{ line-height: 1.6rem; }
+p{ font: 1rem/2rem 'Lato', sans-serif;}
 b, strong{ font-family: 'Cormorant Garamond SemiBold'; }
+p b, p strong{ font-family: 'Lato'; }
 a{ color: black; }
 a:visited{ color: black; }
 .referencetext{
@@ -99,7 +100,7 @@ small{
 
 ul{ padding: 0; }
 ul li{ list-style: none; }
-ol li, ul li{ margin-bottom: .6rem; }
+ol li, ul li{ margin-bottom: .6rem; font-family: 'Lato', sans-serif;}
 
 .bullets{ padding: revert; }
 .bullets li{ list-style: "\2012  "; }
@@ -108,6 +109,7 @@ dt{
     font-variant: small-caps 0.8rem 'Cormorant Garamond Bold';
     padding-right: 0.5rem;
 }
+dd{ font-family: 'Lato', sans-serif;}
 
 @media only screen and (min-width: 700px) {
     dd{
@@ -188,6 +190,7 @@ nav a, #projects a{ text-decoration: none; }
     float: left;
     margin: 0 .6rem 0 0;
     line-height: 2rem;
+    font-family: "Cormorant Garamond", serif;
 }
 #navbar li a{ font-size: 0.8rem;
 }@media only screen and (min-width: 600px) {
@@ -506,6 +509,7 @@ summary:before{
 }
 .intro-component-description{ text-align: center; font-size: 1.5rem; margin-top: 6rem; }
 .intro-component-large{ font: 2.4rem/2.1rem 'Cormorant Garamond', serif; }
+.intro-component-large strong{ font-family: 'Cormorant Garamond SemiBold', serif; }
 .intro-component-emphasis{
     display: block;
     text-align: right;
