@@ -107,7 +107,7 @@ ol li, ul li{ margin-bottom: .6rem; font-family: 'Lato', sans-serif;}
 .bullets li{ list-style: "\2012  "; }
 
 dt{
-    font-variant: small-caps 0.8rem 'Cormorant Garamond Bold';
+    font: small-caps 0.8rem 'Cormorant Garamond Bold', serif;
     padding-right: 0.5rem;
 }
 dd{ font-family: 'Lato', sans-serif;}
