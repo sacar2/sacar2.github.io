@@ -77,7 +77,7 @@ h4{ font: 1.3em/1em 'Cormorant Garamond', serif; margin: 1rem 0 .3rem;}
 
 p{ font: 1rem/2rem 'Lato', sans-serif;}
 b, strong{ font-family: 'Cormorant Garamond SemiBold'; }
-p b, p strong{ font-family: 'Lato'; }
+p b, p strong, li b{ font-family: 'Lato', sans-serif; }
 a{ color: black; }
 a:visited{ color: black; }
 .referencetext{
