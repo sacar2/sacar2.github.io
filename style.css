@@ -440,8 +440,8 @@ details[open] > summary:before { transform: rotate(90deg);}
 .sticky-context p{
     writing-mode: vertical-lr;
     padding: 2rem 0;
-    color: #79B9DE;
+    color: #8F7500;
     font-size: .8rem;
     letter-spacing: .01rem;
-    opacity: 0.67;
-}
+/*    opacity: 0.87;*/
+ }
