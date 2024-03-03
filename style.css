@@ -288,6 +288,7 @@ img{
     padding-bottom: 1.3rem;
 }
 
+/* SECONDARY INFO ====================================*/
 
 .secondaryinfo{
     letter-spacing: 0.05rem;
@@ -350,7 +351,8 @@ summary:before{
   transition: .25s transform ease;
 }
 
-/* COMPONENTS: HOMEPAGE ====================================*/
+/* BRANDS ====================================*/
+
 
 .brands{
     margin-top: 14rem;
@@ -384,6 +386,12 @@ summary:before{
     #chat, .brands{
         text-align: center;
     }
+}
+
+/* CHAT ====================================*/
+
+#chat{
+    margin-top: 14rem;
 }
 
 .chat-message-container{
@@ -444,6 +452,9 @@ summary:before{
 .chat-link:hover .mark-blue, .chat-link:hover .mark-blue, .chat-link:hover .mark-blue{ background: linear-gradient(180deg, #4F4F5E 60%, rgba(50,180,255, 0.7) 40%); }
 
 
+/* INTRO ====================================*/
+
+
 .intro-component{
     display: flex;
     text-align: left;
@@ -494,19 +505,9 @@ summary:before{
 }@media only screen and (min-width: 1500px) {
 }
 
+
+/* IMAGE FORMATTING ====================================*/
+
 .invertimage{
     filter: invert(100%);
 }
-
-@media only screen and (min-width: 600px) {
-    .other-projects{ padding-left: 1rem; }
-}@media only screen and (min-width: 800px) {
-    .other-projects{ max-width: 950px; }
-}
-.other-projects p{ font-family: 'Cormorant Infant Bold'; }
-.other-projects p em{ font-weight: normal; }
-
-#chat{
-    margin-top: 14rem;
-}
-
