@@ -33,18 +33,12 @@ body{
 }
 
 @media only screen and (min-width: 1000px) {
-    .container-full{ padding: 0 0 2rem; }
-    .container-wide{
-        padding: 1rem 0;
+    .container{
         width: 1000px;
         margin: auto;
     }
-    .container-narrow{
-        padding: 1rem 0;
-        width: 800px;
-        margin: auto;
-    }
 }
+
 
 
 /* ALIGNMENT & SPACING ====================================*/
@@ -52,6 +46,8 @@ body{
 .center{ text-align: center; }
 .inline{ display: inline; }
 .resultsCTA{ margin-bottom: 2rem; }
+
+
 
 /* TEXT ====================================*/
 
@@ -65,12 +61,6 @@ h4{ font: 1.602rem/1em 'Cormorant Infant', serif; margin: 1rem 0 .3rem;}
     h3{ font: 3.052rem/3rem 'Cormorant Infant', serif; }
     h4{ font: 2.441rem/2.0rem 'Cormorant Infant', serif; }
 
-}
-
-.subheading{
-    padding: 1rem;
-    margin: 0;
-    text-align: center;
 }
 
 .description{ font: 2rem/3rem 'Cormorant Infant', serif; }
@@ -92,25 +82,28 @@ small{
     float: right;
     text-align: right;
     font-family: 'Lato', sans-serif;
-/*    letter-spacing: .1em;*/
 }
 
-.mobile-only{
-}
+
 .medium-large-only{
     display: none;
-
-}
-
-@media only screen and (min-width: 700px) {
+}@media only screen and (min-width: 700px) {
     
-    .mobile-only{
-        display: none;
-    }
-    .medium-large-only{
-        display: initial;
-    }
+    .mobile-only{ display: none; }
+    .medium-large-only{ display: initial; }
 }
+
+
+
+/* IMAGES ====================================*/
+
+img{
+    width: 100%;
+    padding-bottom: 1.3rem;
+}
+
+.invertimage{ filter: invert(100%); }
+
 
 
 /* LISTS ====================================*/
@@ -147,6 +140,8 @@ dd{ font-family: 'Lato', sans-serif;}
     }
 }
 
+
+
 /* MARKS (Highlights) ====================================*/
 
 .mark{ background: linear-gradient(180deg, #fff 60%, #FFDF50 40%); }
@@ -155,6 +150,8 @@ dd{ font-family: 'Lato', sans-serif;}
 .mark-red{ background: linear-gradient(180deg, #131313 60%, rgba(255,70,72, 0.7) 40%); }
 .mark-green{ background: linear-gradient(180deg, #131313 60%, rgba(81,176,67, 0.7) 40%); }
 .mark-blue{ background: linear-gradient(180deg, #0051C2 60%, rgba(50,180,255, 0.7) 40%); }
+
+
 
 /* EFFECTS ====================================*/
 
@@ -184,6 +181,8 @@ dd{ font-family: 'Lato', sans-serif;}
     transform: translatey(0px);
     opacity: 1;
 }
+
+
 
 /* NAVIGATION ====================================*/
 nav{
@@ -216,40 +215,9 @@ nav a, #projects a{ text-decoration: none; }
 #navbar a:hover{ background: linear-gradient(180deg, #131313 60%, rgba(246,178,29, 0.7) 40%); }
 #navbar a>h1:hover{ background: linear-gradient(180deg, #131313 60%, rgba(246,178,29, 0.7) 40%); }
 
-/* COMPONENTS: GLOBAL ====================================*/
 
-#about{
-    animation: fadein 2s;
-    position: relative;
-    scroll-snap-type: y mandatory;
-}
 
-.card{
-    padding: 1rem 2rem;
-    box-shadow: 4px 4px 10px lightgrey;
-    box-sizing: border-box;
-}
-
-.challenge{
-    padding: 1rem 2rem;
-    border-left: 6px solid gray;
-    box-shadow: 4px 4px 10px lightgrey;
-    box-sizing: border-box;
-    margin-bottom: 1rem;
-    border-radius: 5px 0 0 5px;
-    background: #fefefe;
-}
-.challenge h4{ font: small-caps 1rem 'Cormorant Infant Bold'; margin: 0;}
-
-.cover-image{
-    max-height:50vh;
-    object-fit: cover;
-}
-
-.CTA{
-    font-size: 2rem;
-    float: right;
-}
+/* Details? ====================================*/
 
 details {
     margin-bottom: 0.5rem;
@@ -263,98 +231,48 @@ details #text { content: "see other projects"; }
 details[open] #text { content: "hide other projects"; }
 details[open] > summary:before { transform: rotate(90deg);}
 
-.sticky-context{
-    padding:0;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    height:100vh;
-    transform: rotate(180deg);
-    display: flex;
-    flex-direction: column;
-    z-index: -100;
-}
-.sticky-context p{
-    writing-mode: vertical-lr;
-    padding: 2rem 0;
-    color: #79B9DE;
-    font-size: .8rem;
-    letter-spacing: .01rem;
-    opacity: 0.67;
-}
 
-img{
-    width: 100%;
-    padding-bottom: 1.3rem;
-}
 
-/* SECONDARY INFO ====================================*/
+/* SKILLS EDUCATION ====================================*/
 
-.secondaryinfo{
+
+.skillseducation{
+    margin-top: 14rem;
     letter-spacing: 0.05rem;
     font-size: 0.9rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 1rem;
-    margin-top: 14rem;
 }
-.secondaryinfo-block{
+.skillseducation-section{
     width: 100%;
     text-align: left;
 }
-
-.secondaryinfo-block-edu li, .secondaryinfo-block-skills ul{
+.education li, .skills ul{
     margin-bottom: 2.5rem;
 }
-.secondaryinfo-block-content img{
-        padding: 0;
-        max-width: 120px;
-}
 @media only screen and (min-width: 475px) {
-    .secondaryinfo{
+    .skillseducation{
          flex-direction: row;
          flex-wrap: wrap;
     }
-    .secondaryinfo-block{ width:46%; }
-    .secondaryinfo-block:nth-child(3){ width:100%; }
-    
-    .secondaryinfo-block-skills{
-        text-align: right;
-    }
+    .skillseducation-section{ width:46%; }
+    .skills{ text-align: right; }
 }@media only screen and (min-width: 800px) {
-    .secondaryinfo{
-         flex-direction: row;
+    .skillseducation{
          flex-wrap: nowrap;
          align-items: stretch;
     }
-    .secondaryinfo-block{ width:45%;}
+    .skillseducation-section{ width:45%; }
 }
 
-summary{
-  padding: 1rem;
-  display: block;
-  padding-left: 2.2rem;
-  position: relative;
-  cursor: pointer;
-}
-summary:before{
-  content: '';
-  border-width: .4rem;
-  border-style: solid;
-  border-color: transparent transparent transparent black;
-  position: absolute;
-  top: 1.3rem;
-  left: 1rem;
-  transform: rotate(0);
-  transform-origin: .2rem 50%;
-  transition: .25s transform ease;
-}
+
 
 /* BRANDS ====================================*/
 
 
-.brands{
+#brands{
     margin-top: 14rem;
 }
 .brands-images{
@@ -362,8 +280,9 @@ summary:before{
     grid-template-columns: 1fr 1fr;
     column-gap: 4rem;
     row-gap: 4rem;
-    margin-top: 4rem;
+    margin: 4rem auto 0 auto;
     align-items: center;
+    max-width: 1080px;
 }
 .brands-images img{
     max-height: 60px;
@@ -380,15 +299,18 @@ summary:before{
     }
 }
 
-#chat, .brands{
+#chat, #brands{
     text-align: left;
 }@media only screen and (min-width: 475px) {
-    #chat, .brands{
+    #chat, #brands{
         text-align: center;
     }
 }
 
+
+
 /* CHAT ====================================*/
+
 
 #chat{
     margin-top: 14rem;
@@ -452,8 +374,14 @@ summary:before{
 .chat-link:hover .mark-blue, .chat-link:hover .mark-blue, .chat-link:hover .mark-blue{ background: linear-gradient(180deg, #4F4F5E 60%, rgba(50,180,255, 0.7) 40%); }
 
 
+
 /* INTRO ====================================*/
 
+#about{
+    animation: fadein 2s;
+    position: relative;
+    scroll-snap-type: y mandatory;
+}
 
 .intro-component{
     display: flex;
@@ -462,52 +390,58 @@ summary:before{
     margin: 10vh 0 0;
     gap: 1rem;
 }
-.intro-component img{
+.intro-component-img{
     object-fit: cover;
     max-height: 50vh;
 }
-.intro-component h2{
-    margin: 0 0 1rem;
-}
+.intro-component-heading{ margin: 0 0 1rem; }
 @media only screen and (min-width: 800px) {
     .intro-component{
         flex-wrap: nowrap;
         text-align: right;
     }
-    .intro-component-text{
-        max-width: 60%;
-    }
-    .intro-component img{
+    .intro-component .:nth-child(0){ max-width: 60%; }
+    .intro-component-img{
         max-width: 38%;
         max-height: none;
     }
-}@media only screen and (min-width: 1200px) {
-    .intro-component h2{
-        display: inline;
-    }
 }
-.intro-component-description{
+.intro-secondary{
     text-align: center;
     font-size: 1.5rem;
     margin-top: 6rem;
 }@media only screen and (min-width: 1200px) {
-    .intro-component-description{
-        text-align: center;
-    }
+    .intro-secondary{ text-align: center; }
 }
-.intro-component-large{ font: 1.3rem/1.1rem 'Cormorant Infant', serif; }
-.intro-component-large strong{ font-family: 'Cormorant Infant', serif; }
+.intro-secondary-block{ font: 1.3rem/1.1rem 'Cormorant Infant', serif; }
 .intro-component-emphasis{
     display: block;
     text-align: right;
     font-style: italic;
     margin: 0;
-}@media only screen and (min-width: 1500px) {
 }
 
 
-/* IMAGE FORMATTING ====================================*/
 
-.invertimage{
-    filter: invert(100%);
+/* STICKY CONTEXT (on bottom right) ====================================*/
+
+
+.sticky-context{
+    padding:0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height:100vh;
+    transform: rotate(180deg);
+    display: flex;
+    flex-direction: column;
+    z-index: -100;
+}
+.sticky-context p{
+    writing-mode: vertical-lr;
+    padding: 2rem 0;
+    color: #79B9DE;
+    font-size: .8rem;
+    letter-spacing: .01rem;
+    opacity: 0.67;
 }
